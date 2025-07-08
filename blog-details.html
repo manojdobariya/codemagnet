@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMagent – Buy & Sell Website Themes and Templates</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 sticky top-0 z-50 rounded-b-xl">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="./assets/images/logo-black.png" alt="logo" class="h-[40px]">
+            </a>
+            <!-- Desktop Navigation -->
+            <div id="desktop-menu" class="hidden lg:flex items-center space-x-6">
+                <a href="index.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Home</a>
+                <a href="features.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Features</a>
+                <a href="pricing.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Pricing</a>
+                <a href="templates.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Templates</a>
+                <a href="blog.html" class="text-primary font-bold">Blog</a>
+                <a href="contact.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Contact</a>
+                <a href="signup.html"
+                    class="px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300">Sign
+                    Up Free</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button"
+                class="lg:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-md p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Navigation (hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden flex-col items-center space-y-4 w-full fixed top-16 left-0 right-0 p-6 bg-white shadow-lg z-40 transition-all duration-300 ease-in-out">
+            <a href="index.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Home</a>
+            <a href="features.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Features</a>
+            <a href="pricing.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Pricing</a>
+            <a href="templates.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Templates</a>
+            <a href="blog.html" class="block py-2 text-primary font-bold">Blog</a>
+            <a href="contact.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Contact</a>
+            <a href="signup.html"
+                class="block px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300 w-fit">Sign
+                Up Free</a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Blog Post Header) -->
+    <section class="hero-gradient text-white px-6 py-20 md:py-28 lg:py-36 text-center overflow-hidden rounded-b-3xl">
+        <div class="container mx-auto relative z-10 fade-in-section" style="--animation-delay: 0s;">
+            <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 tracking-tight drop-shadow-lg max-w-4xl mx-auto">
+                The Power of Color Psychology in Branding
+            </h1>
+            <div
+                class="post-meta text-lg md:text-xl text-white text-opacity-90 flex justify-center items-center space-x-6 animate-fade-slide-in-js delay-0.1s">
+                <span><i class="fas fa-user-circle text-secondary mr-2"></i> By Dr. Emily Brand</span>
+                <span><i class="fas fa-calendar-alt text-secondary mr-2"></i> April 01, 2025</span>
+                <span><i class="fas fa-clock text-secondary mr-2"></i> 10 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Blog Content Section with Sidebar -->
+    <section class="py-10 rounded-xl m-6 lg:m-12 fade-in-section" style="--animation-delay: 0.2s;">
+        <div class="container mx-auto grid grid-cols-3 gap-8">
+            <!-- Main Content Area -->
+            <div class="col-span-full xl:col-span-2">
+                <div class="blog-detail-container">
+                    <!-- Main Article Content -->
+                    <article
+                        class="col-span-full md:col-span-2 lg:col-span-3 bg-bg-white p-8 md:p-10 rounded-xl shadow-subtle">
+                        <div class="article-hero-image mb-10 rounded-xl overflow-hidden shadow-md">
+                            <img src="./assets/images/Trends-Design-1.png" alt="Color Palette for Branding"
+                                class="w-full h-auto object-cover">
+                        </div>
+                        <div class="article-content text-lg leading-relaxed text-text-dark">
+                            <p>In the competitive world of branding, every element contributes to a company's identity
+                                and its connection with consumers. Among these, color stands out as a silent yet
+                                incredibly powerful communicator. Color psychology, the study of how colors affect human
+                                behavior and emotions, is a critical tool for brands looking to forge deep, subconscious
+                                connections with their target audience.</p>
+
+                            <h3 class="text-2xl font-semibold text-gray-800">Understanding the Emotional Impact of
+                                Colors</h3>
+                            <p>Colors evoke specific feelings and associations, often rooted in cultural and personal
+                                experiences. A brand's chosen palette can influence perception, convey its values, and
+                                even drive purchasing decisions. Let's explore some common colors and their
+                                psychological associations in branding:</p>
+                            <ul>
+                                <li><strong>Red:</strong> Energy, passion, urgency, excitement. Often used by brands
+                                    wanting to create a sense of urgency or stimulate action (e.g., sales, fast food).
+                                </li>
+                                <li><strong>Blue:</strong> Trust, stability, professionalism, calmness. Popular among
+                                    financial institutions, tech companies, and healthcare for its reassuring qualities.
+                                </li>
+                                <li><strong>Green:</strong> Nature, growth, health, tranquility. Favored by eco-friendly
+                                    brands, health-related businesses, and those promoting freshness.</li>
+                                <li><strong>Yellow:</strong> Optimism, warmth, cheerfulness, caution. Can grab attention
+                                    but should be used carefully to avoid overwhelming or appearing cheap.</li>
+                                <li><strong>Purple:</strong> Luxury, creativity, wisdom, royalty. Often associated with
+                                    high-end products, beauty brands, and creative industries.</li>
+                                <li><strong>Orange:</strong> Enthusiasm, creativity, youthfulness, affordability. A
+                                    vibrant color that can be playful and inviting.</li>
+                                <li><strong>Black:</strong> Sophistication, power, elegance, mystery. Used by luxury
+                                    brands, fashion, and tech for a sleek, modern feel.</li>
+                                <li><strong>White:</strong> Purity, simplicity, cleanliness, minimalism. Common in
+                                    healthcare, bridal, and minimalist design.</li>
+                            </ul>
+
+                            <blockquote>
+                                "Colors, like features, follow the changes of the emotions."
+                                <br>— Pablo Picasso
+                            </blockquote>
+
+                            <h3 class="text-2xl font-semibold text-gray-800">Strategic Color Selection for Your Brand
+                            </h3>
+                            <p>Choosing the right colors for your brand is not merely about personal preference; it's a
+                                strategic decision. Consider these factors:</p>
+                            <ol>
+                                <li><strong>Target Audience:</strong> Different demographics and cultures may interpret
+                                    colors differently. Research your audience's associations with colors.</li>
+                                <li><strong>Brand Personality:</strong> Is your brand playful or serious? Innovative or
+                                    traditional? Bold or subtle? Your colors should reflect these traits.</li>
+                                <li><strong>Industry:</strong> Certain industries have established color norms (e.g.,
+                                    blue for finance, green for environmental). While you can deviate, understand the
+                                    implications.</li>
+                                <li><strong>Competitor Analysis:</strong> Analyze your competitors' color palettes. Do
+                                    you want to blend in or stand out?</li>
+                                <li><strong>Color Combinations:</strong> It's not just about single colors, but how they
+                                    interact. A well-balanced palette uses primary, secondary, and accent colors
+                                    effectively.</li>
+                            </ol>
+
+                            <img src="./assets/images/Trends-Design-2.png" alt="Brand Color Palette Design"
+                                class="w-full h-auto object-cover my-8">
+
+                            <h3 class="text-2xl font-semibold text-gray-800">The Importance of Consistency</h3>
+                            <p>Once you've established your brand colors, consistency is paramount. Every touchpoint –
+                                your logo, website, social media, packaging, and advertising – should adhere to your
+                                defined color palette. This consistent application builds recognition, reinforces your
+                                brand identity, and fosters trust with your audience.</p>
+                            <p>Inconsistent color usage can lead to confusion, dilute your brand message, and make your
+                                brand appear unprofessional or unreliable. Tools and style guides can help maintain
+                                strict adherence to your brand's visual standards.</p>
+
+                            <pre><code>
+// Example of a brand's color variables in CSS
+:root {
+  --brand-primary-blue: #2e86de;
+  --brand-secondary-navy: #0d2c5e;
+  --brand-accent-teal: #53d2dc;
+  --brand-neutral-gray: #f4f7fa;
+}
+
+.button-primary {
+  background-color: var(--brand-primary-blue);
+  color: white;
+}
+
+.text-highlight {
+  color: var(--brand-accent-teal);
+}
+                    </code></pre>
+
+                            <p>In conclusion, color psychology is far more than an aesthetic choice; it's a strategic
+                                imperative for effective branding. By understanding the emotional power of colors and
+                                applying them thoughtfully and consistently, brands can build stronger identities,
+                                communicate more effectively, and resonate deeply with their target consumers. It's an
+                                investment in the very soul of your brand.</p>
+                        </div>
+                        <!-- Share Buttons -->
+                        <div
+                            class="share-buttons mt-12 pt-8 border-t border-border-light flex flex-wrap items-center justify-center md:justify-start gap-4 animate-fade-in-up-js delay-0.3s">
+                            <span class="text-lg font-semibold text-dark mr-4">Share This Post:</span>
+                            <a href="#"
+                                class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl hover:bg-secondary transition-colors duration-400 shadow-md hover:shadow-lg"
+                                aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"
+                                class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl hover:bg-secondary transition-colors duration-400 shadow-md hover:shadow-lg"
+                                aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#"
+                                class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl hover:bg-secondary transition-colors duration-400 shadow-md hover:shadow-lg"
+                                aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"
+                                class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl hover:bg-secondary transition-colors duration-400 shadow-md hover:shadow-lg"
+                                aria-label="Share via Email"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+
+                        <!-- Author Box -->
+                        <div
+                            class="author-box mt-12 p-8 bg-bg-light rounded-xl shadow-subtle flex flex-col md:flex-row items-center gap-6">
+                            <img src="./assets/images/author.jpg" alt="Author Dr. Emily Brand"
+                                class="w-32 h-32 rounded-full object-cover border-4 border-primary shadow-md">
+                            <div class="author-info text-center md:text-left">
+                                <h3 class="text-2xl text-primary mb-2">About Dr. Emily Brand</h3>
+                                <p class="text-text-light mb-4">Dr. Emily Brand is a renowned marketing strategist and
+                                    brand consultant with a Ph.D. in Consumer Psychology. She specializes in leveraging
+                                    behavioral science and design principles to build impactful brands. Emily frequently
+                                    advises startups and established companies on their brand identity and market
+                                    positioning.</p>
+                                <div class="author-socials flex justify-center md:justify-start space-x-4">
+                                    <a href="#" aria-label="Emily Brand Facebook"
+                                        class="text-primary hover:text-secondary transition-colors duration-400 text-xl"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a href="#" aria-label="Emily Brand Twitter"
+                                        class="text-primary hover:text-secondary transition-colors duration-400 text-xl"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="Emily Brand LinkedIn"
+                                        class="text-primary hover:text-secondary transition-colors duration-400 text-xl"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Previous/Next Post Navigation -->
+                        <div
+                            class="post-navigation mt-12 pt-8 border-t border-border-light flex flex-col md:flex-row justify-between gap-6">
+                            <a href="#"
+                                class="flex flex-col items-start p-4 bg-bg-white rounded-xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 group">
+                                <span class="text-text-light text-sm mb-2"><i
+                                        class="fas fa-arrow-left mr-2 text-secondary group-hover:text-primary transition-colors duration-400"></i>
+                                    Previous Post</span>
+                                <h4
+                                    class="text-lg text-secondary group-hover:text-primary transition-colors duration-400">
+                                    The Psychology of Pricing</h4>
+                            </a>
+                            <a href="#"
+                                class="flex flex-col items-end text-right p-4 bg-bg-white rounded-xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 group">
+                                <span class="text-text-light text-sm mb-2">Next Post <i
+                                        class="fas fa-arrow-right ml-2 text-secondary group-hover:text-primary transition-colors duration-400"></i></span>
+                                <h4
+                                    class="text-lg text-secondary group-hover:text-primary transition-colors duration-400">
+                                    Mastering Brand Storytelling</h4>
+                            </a>
+                        </div>
+
+                        <!-- Comments Section -->
+                        <div
+                            class="comments-section mt-16 p-8 bg-bg-white rounded-xl shadow-subtle animate-fade-in-up-js delay-0.6s">
+                            <h3
+                                class="text-2xl font-bold text-primary mb-8 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-[3px] after:bg-primary after:rounded">
+                                Comments (4)</h3>
+
+                            <!-- Single Comment -->
+                            <div
+                                class="comment-item flex mb-8 pb-8 border-b border-border-light last:border-b-0 last:pb-0 last:mb-0">
+                                <img src="./assets/images/Users/user-1.jpg" alt="Avatar"
+                                    class="w-16 h-16 rounded-full object-cover mr-6 flex-shrink-0">
+                                <div class="comment-content flex-grow">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <h4 class="text-lg font-semibold text-primary m-0">Mark K.</h4>
+                                        <span class="text-sm text-text-light">April 02, 2025</span>
+                                    </div>
+                                    <p class="text-text-dark mb-3">Excellent breakdown, Dr. Brand! This article
+                                        perfectly articulates why our brand's blue palette resonates so well with our
+                                        audience. Consistency is indeed key!</p>
+                                    <a href="#" class="text-secondary text-sm font-medium hover:text-primary">Reply</a>
+                                </div>
+                            </div>
+
+                            <!-- Single Comment -->
+                            <div
+                                class="comment-item flex mb-8 pb-8 border-b border-border-light last:border-b-0 last:pb-0 last:mb-0">
+                                <img src="./assets/images/Users/user-2.jpg" alt="Avatar"
+                                    class="w-16 h-16 rounded-full object-cover mr-6 flex-shrink-0">
+                                <div class="comment-content flex-grow">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <h4 class="text-lg font-semibold text-primary m-0">Sarah A.</h4>
+                                        <span class="text-sm text-text-light">April 03, 2025</span>
+                                    </div>
+                                    <p class="text-text-dark mb-3">I always wondered about the subconscious impact of
+                                        colors. This is a must-read for anyone in marketing. Thank you!</p>
+                                    <a href="#" class="text-secondary text-sm font-medium hover:text-primary">Reply</a>
+                                    <!-- Nested Reply -->
+                                    <div class="comment-item flex mt-6 pt-6 border-t border-border-light">
+                                        <img src="./assets/images/author.jpg" alt="Avatar"
+                                            class="w-16 h-16 rounded-full object-cover mr-6 flex-shrink-0">
+                                        <div class="comment-content flex-grow">
+                                            <div class="flex justify-between items-center mb-2">
+                                                <h4 class="text-lg font-semibold text-primary m-0">Dr. Emily
+                                                    Brand
+                                                    (Author)</h4>
+                                                <span class="text-sm text-text-light">April 03, 2025</span>
+                                            </div>
+                                            <p class="text-text-dark mb-3">You're very welcome, Sarah! It's a
+                                                fascinating field with immense practical application.</p>
+                                            <a href="#"
+                                                class="text-secondary text-sm font-medium hover:text-primary">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="comment-item flex mb-8 pb-8 border-b border-border-light last:border-b-0 last:pb-0 last:mb-0">
+                                <img src="./assets/images/Users/user-3.png" alt="Avatar"
+                                    class="w-16 h-16 rounded-full object-cover mr-6 flex-shrink-0">
+                                <div class="comment-content flex-grow">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <h4 class="text-lg font-semibold text-primary m-0">Jessica L.</h4>
+                                        <span class="text-sm text-text-light">April 04, 2025</span>
+                                    </div>
+                                    <p class="text-text-dark mb-3">I'm building a new brand and this article gives me so
+                                        much to think about regarding my color choices. Super helpful!</p>
+                                    <a href="#" class="text-secondary text-sm font-medium hover:text-primary">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment Form -->
+                        <div
+                            class="comment-form mt-12 p-8 bg-bg-white rounded-xl shadow-subtle animate-fade-in-up-js delay-0.7s">
+                            <h3
+                                class="text-2xl font-bold text-primary mb-8 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-[3px] after:bg-primary after:rounded">
+                                Leave a Comment</h3>
+                            <form>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                    <div>
+                                        <label for="name" class="block text-text-dark text-sm font-medium mb-2">Name
+                                            <span class="text-red-500">*</span></label>
+                                        <input type="text" id="name" name="name" required
+                                            class="w-full p-3 border border-border-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-text-dark text-sm font-medium mb-2">Email
+                                            <span class="text-red-500">*</span></label>
+                                        <input type="email" id="email" name="email" required
+                                            class="w-full p-3 border border-border-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                                    </div>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="comment" class="block text-text-dark text-sm font-medium mb-2">Comment
+                                        <span class="text-red-500">*</span></label>
+                                    <textarea id="comment" name="comment" rows="6" required
+                                        class="w-full p-3 border border-border-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-action bg-primary text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-secondary hover:text-white hover:translate-y-[-3px] hover:shadow-hover transition-all duration-400 ease-out">Post
+                                    Comment</button>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Sidebar Area -->
+            <!-- <aside class="lg:col-span-1 flex flex-col space-y-8"> -->
+            <aside class="sidebar col-span-full xl:col-span-1">
+                <div class="p-6 bg-bg-white rounded-xl shadow-subtle">
+                    <div class="sidebar-block mb-10">
+                        <div
+                            class="search-block flex border border-border-light rounded-xl overflow-hidden focus-within:border-primary transition-colors duration-400">
+                            <input type="text" placeholder="Search"
+                                class="flex-grow p-3 border-none outline-none text-text-dark text-base">
+                            <button type="submit"
+                                class="bg-primary text-white py-2 px-4 text-lg cursor-pointer transition-colors duration-400 hover:bg-secondary">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-block mb-10">
+                        <h2
+                            class="font-bold text-xl text-primary mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-[3px] after:bg-primary after:rounded">
+                            Categories</h2>
+                        <ul>
+                            <li class="mb-3"><a href="#"
+                                    class="text-text-light flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Design
+                                    Trends
+                                    <span
+                                        class="count bg-border-light text-text-light px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">12</span></a>
+                            </li>
+                            <li class="mb-3"><a href="#"
+                                    class="text-text-light flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Marketing
+                                    Strategy
+                                    <span
+                                        class="count bg-border-light text-text-light px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">8</span></a>
+                            </li>
+                            <li class="mb-3"><a href="#"
+                                    class="text-white flex justify-between items-center p-2 rounded-lg font-semibold active bg-primary">UI/UX
+                                    Tips
+                                    <span
+                                        class="count text-white bg-opacity-30 px-2 py-1 rounded-md text-sm font-semibold bg-white transition-all duration-400">15</span></a>
+                            </li>
+                            <li class="mb-3"><a href="#"
+                                    class="text-text-light flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Product
+                                    Updates
+                                    <span
+                                        class="count bg-border-light text-text-light px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">5</span></a>
+                            </li>
+                            <li class="mb-3"><a href="#"
+                                    class="text-text-light flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Content
+                                    Creation
+                                    <span
+                                        class="count bg-border-light text-text-light px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">7</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-block mb-10">
+                        <h2
+                            class="font-bold text-xl text-primary mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-[3px] after:bg-primary after:rounded">
+                            Recent Posts</h2>
+                        <div class="property-list">
+                            <div
+                                class="property-item flex items-center mb-5 pb-5 border-b border-dashed border-border-light last:border-b-0 last:pb-0 last:mb-0">
+                                <img src="./assets/images/post-image/post-1.png" alt="Property 1"
+                                    class="w-32 h-24 object-cover rounded-lg mr-4 shadow-subtle">
+                                <div class="property-info flex flex-col">
+                                    <h3 class="text-md font-semibold text-primary mb-1 leading-tight"><a href="#">Future
+                                            of AI in Design
+                                            Workflow</a></h3>
+                                    <p class="text-sm text-light mb-2">AI is revolutionizing design workflows ahead.</p>
+                                    <a href="#"
+                                        class="text-sm text-secondary font-medium hover:text-primary transition-colors duration-400">Read
+                                        More
+                                        &rarr;</a>
+                                </div>
+                            </div>
+                            <div
+                                class="property-item flex items-center mb-5 pb-5 border-b border-dashed border-border-light last:border-b-0 last:pb-0 last:mb-0">
+                                <img src="./assets/images/post-image/post-2.png" alt="Property 2"
+                                    class="w-32 h-24 object-cover rounded-lg mr-4 shadow-subtle">
+                                <div class="property-info flex flex-col">
+                                    <h3 class="text-md font-semibold text-primary mb-1 leading-tight">
+                                        <a href="#">Building Accessible
+                                            Websites</a>
+                                    </h3>
+                                    <p class="text-sm text-light mb-2">Creating websites usable for everyone.</p>
+                                    <a href="#"
+                                        class="text-sm text-secondary font-medium hover:text-primary transition-colors duration-400">Read
+                                        More
+                                        &rarr;</a>
+                                </div>
+                            </div>
+                            <div
+                                class="property-item flex items-center mb-5 pb-5 border-b border-dashed border-border-light last:border-b-0 last:pb-0 last:mb-0">
+                                <img src="./assets/images/post-image/post-3.png" alt="Property 3"
+                                    class="w-32 h-24 object-cover rounded-lg mr-4 shadow-subtle">
+                                <div class="property-info flex flex-col">
+                                    <h3 class="text-md font-semibold text-primary mb-1 leading-tight"><a href="#">Visual
+                                            Storytelling
+                                            for Brands</a>
+                                    </h3>
+                                    <p class="text-sm text-light mb-2">Bringing brands to life through visuals.</p>
+                                    <a href="#"
+                                        class="text-sm text-secondary font-medium hover:text-primary transition-colors duration-400">Read
+                                        More
+                                        &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-block">
+                        <h2
+                            class="font-bold text-xl text-primary mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-[3px] after:bg-primary after:rounded">
+                            Tags</h2>
+                        <div class="tag-cloud flex flex-wrap gap-2">
+                            <a href="#"
+                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">UIdesign</a>
+                            <a href="#"
+                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">UXresearch</a>
+                            <a href="#"
+                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">branding</a>
+                            <a href="#"
+                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">AItools</a>
+                            <a href="#"
+                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Socialmedia</a>
+                            <a href="#"
+                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Webdesign</a>
+                            <a href="#"
+                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Typography</a>
+                            <a href="#"
+                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Seo</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- </aside> -->
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-white py-10 px-4 md:px-6 text-center rounded-xl shadow-lg m-6 lg:m-12 fade-in-section"
+        style="--animation-delay: 0.4s;">
+        <div class="container mx-auto">
+            <h2 class="text-2xl md:text-4xl font-bold mb-6 text-gray-800">Ready to Elevate Your Designs?</h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                Join thousands of satisfied users and start creating stunning visuals today.
+            </p>
+            <a href="#"
+                class="inline-block px-8 py-4 rounded-full button-gradient text-white font-bold text-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cta-pulse-animation">
+                Get Started for Free
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 rounded-t-3xl">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+            <div>
+                <a href="#" class="inline-block mb-4">
+                    <img src="./assets/images/logo-white.png" alt="logo" class="h-[40px]">
+                </a>
+                <p class="text-md mb-4 text-gray-400">Design made easy. Create, share, and grow.</p>
+                <ul class="list-none">
+                    <li class="flex items-baseline">
+                        <i class="fas fa-map-marker-alt text-primary mr-2.5"></i>
+                        <p class="mb-3 text-md text-gray-400">
+                            221B Baker Street, London, NW1 6XE, United Kingdom</p>
+                    </li>
+                    <li>
+                        <a href="tel:+15551234567"
+                            class="block mb-3 text-md text-gray-400 transition-colors duration-200 hover:text-white"><i
+                                class="fas fa-phone text-primary mr-2.5"></i>+1-555-123-4567
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@codemagent.com"
+                            class="block mb-5 text-md text-gray-400 transition-colors duration-200 hover:text-white"><i
+                                class="fas fa-envelope text-primary mr-2.5"></i>info@codemagent.com
+                        </a>
+                    </li>
+                </ul>
+                <div class="social-links flex space-x-3">
+                    <a href="#" aria-label="Facebook"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                <ul>
+                    <li class="mb-4"><a href="features.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Features</a>
+                    </li>
+                    <li class="mb-4"><a href="pricing.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Pricing</a>
+                    </li>
+                    <li class="mb-4"><a href="templates.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Templates</a>
+                    </li>
+                    <li class="mb-4"><a href="blog.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Blog</a></li>
+                    <li class="mb-4"><a href="signin.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Signin</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
+                <ul>
+                    <li class="mb-4"><a href="about-us.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">About Us</a>
+                    </li>
+                    <li class="mb-4"><a href="privacy-policy.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Privacy
+                            Policy</a>
+                    </li>
+                    <li class="mb-4"><a href="terms-and-conditions.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Terms and
+                            Conditions</a></li>
+                    <li class="mb-4"><a href="faq.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">FAQ</a></li>
+                    <li class="mb-4"><a href="contact.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
+                <p class="text-gray-400 text-md mb-4">Subscribe to our newsletter for exclusive real estate insights and
+                    offers.
+                </p>
+                <form
+                    class="newsletter-form flex flex-col sm:flex-row rounded-xl overflow-hidden bg-white bg-opacity-10 gap-y-3 sm:gap-x-0">
+                    <input type="email" placeholder="Enter your email here" required class="w-full sm:flex-grow p-3 border-none outline-none bg-transparent text-white placeholder:text-white placeholder:text-opacity-50 text-base
+               focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent
+               transition-all duration-300 ease-in-out
+               rounded-xl sm:rounded-none sm:rounded-l-xl">
+                    <button type="submit" class="px-6 py-3 bg-primary text-white font-semibold cursor-pointer transition-colors duration-400 hover:bg-secondary
+               w-full sm:w-auto rounded-xl sm:rounded-none sm:rounded-r-xl">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-10 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
+            &copy; 2025 CodeMagnet. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="./assets/js/SmoothScroll.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        // JavaScript for fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.fade-in-section');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% of the section is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-section--visible');
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Set animation delays for staggered effect
+            document.querySelectorAll('.fade-in-section').forEach((el, index) => {
+                el.style.setProperty('--animation-delay', `${index * 0.1}s`);
+            });
+
+            // Mobile menu toggle functionality
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

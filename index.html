@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMagent – Buy & Sell Website Themes and Templates</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 sticky top-0 z-50 rounded-b-xl">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="./assets/images/logo-black.png" alt="logo" class="h-[40px]">
+            </a>
+            <!-- Desktop Navigation -->
+            <div id="desktop-menu" class="hidden lg:flex items-center space-x-6">
+                <a href="index.html" class="text-primary font-bold">Home</a>
+                <a href="features.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Features</a>
+                <a href="pricing.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Pricing</a>
+                <a href="templates.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Templates</a>
+                <a href="blog.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Blog</a>
+                <a href="contact.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Contact</a>
+                <a href="signup.html"
+                    class="px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300">Sign
+                    Up Free</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button"
+                class="lg:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-md p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Navigation (hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden flex-col items-center space-y-4 w-full fixed top-16 left-0 right-0 p-6 bg-white shadow-lg z-40 transition-all duration-300 ease-in-out">
+            <a href="index.html" class="block py-2 text-primary font-bold">Home</a>
+            <a href="features.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Features</a>
+            <a href="pricing.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Pricing</a>
+            <a href="templates.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Templates</a>
+            <a href="blog.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Blog</a>
+            <a href="contact.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Contact</a>
+            <a href="signup.html"
+                class="block px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300 w-fit">Sign
+                Up Free</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="hero-gradient text-white px-6 md:px-12 py-20 md:py-28 lg:py-36 text-center overflow-hidden rounded-b-3xl">
+        <div class="container mx-auto relative z-10 fade-in-section" style="--animation-delay: 0s;">
+            <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight drop-shadow-lg">
+                Design Stunning Visuals in Minutes
+            </h1>
+            <p class="text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto opacity-90 drop-shadow-md">
+                Unleash your creativity with our intuitive design platform.
+                Perfect for social media, marketing, and everything in between.
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center items-center">
+                <a href="#"
+                    class="px-8 py-3 rounded-full button-gradient text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    Start Designing for Free
+                </a>
+                <a href="#"
+                    class="px-8 py-3 rounded-full bg-white text-primary font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    Watch Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-10 rounded-xl m-6 md:m-12 fade-in-section" style="--animation-delay: 0.2s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl md:text-4xl font-bold mb-4 text-gray-800">Powerful Features, Simple Workflow</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                Everything you need to create professional designs, no design skills required.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div
+                    class="feature-card p-4 md:p-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    <div class="feature-icon-wrapper icon-circle mb-5">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Intuitive Editor</h3>
+                    <p class="text-gray-600 text-md">Drag and drop elements, customize fonts, colors, and layouts with
+                        ease.</p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div
+                    class="feature-card p-4 md:p-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    <div class="feature-icon-wrapper icon-circle mb-5">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Template Library</h3>
+                    <p class="text-gray-600 text-md">Access thousands of professionally designed templates for any
+                        occasion.</p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div
+                    class="feature-card p-4 md:p-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    <div class="feature-icon-wrapper icon-circle mb-5">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Post Designing</h3>
+                    <p class="text-gray-600 text-md">Create eye-catching, branded posts that engage and drive action
+                        effectively.</p>
+                </div>
+
+                <!-- Feature Card 4 -->
+                <div
+                    class="feature-card p-4 md:p-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    <div class="feature-icon-wrapper icon-circle mb-5">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Brand Kit Management</h3>
+                    <p class="text-gray-600 text-md">Save your brand colors, fonts, and logos for consistent designs.
+                    </p>
+                </div>
+
+                <!-- Feature Card 5 -->
+                <div
+                    class="feature-card p-4 md:p-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    <div class="feature-icon-wrapper icon-circle mb-5">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.592 1M12 8V7m0 1v8m0 4v1m0-12c-1.11 0-2.08-.402-2.592-1M12 4c-.72 0-1.44-.19-2.07-.54l-2.42-1.43m-3.41 11.35a2.536 2.536 0 01-.485.065M12 20c.72 0 1.44.19 2.07.54l2.42 1.43m3.41-11.35a2.536 2.536 0 00.485.065M12 4v.01M12 20v.01M6 22h12a2 2 0 002-2V4a2 2 0 00-2-2H6a2 2 0 00-2 2v16a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Flexible Export Options</h3>
+                    <p class="text-gray-600 text-md">Download designs in various formats or share directly to social
+                        media.</p>
+                </div>
+
+                <!-- Feature Card 6 -->
+                <div
+                    class="feature-card p-4 md:p-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    <div class="feature-icon-wrapper icon-circle mb-5">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H2v-2a3 3 0 015.356-1.857M10 9V3m0 0a2 2 0 012-2h4a2 2 0 012 2v6m-6 2h8m-8 0a2 2 0 012-2h4a2 2 0 012 2m0 0v6a2 2 0 01-2 2H12a2 2 0 01-2-2v-6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Team Collaboration</h3>
+                    <p class="text-gray-600 text-md">Work together with your team and share projects seamlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-10 fade-in-section m-6 md:m-12" style="--animation-delay: 0.4s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl md:text-4xl font-bold mb-4 text-gray-800">How It Works: Simple Steps to Success</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                From idea to stunning design in just a few clicks.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center p-4 md:p-6 bg-white rounded-2xl card-shadow">
+                    <div
+                        class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mb-6 border-4 border-secondary">
+                        <span class="text-4xl font-bold text-primary">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Choose a Template</h3>
+                    <p class="text-gray-600 text-center text-md">Start with a professionally designed template or a
+                        blank
+                        canvas.</p>
+                    <img src="./assets/images/icons/template.png" alt="Choose Template"
+                        class="mt-6 rounded-lg img-float" width="300" height="200"
+                        onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/333333?text=Image+Error';">
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center p-4 md:p-6 bg-white rounded-2xl card-shadow">
+                    <div
+                        class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mb-6 border-4 border-secondary">
+                        <span class="text-4xl font-bold text-primary">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Customize Your Design</h3>
+                    <p class="text-gray-600 text-center text-md">Add your text, images, brand colors, and unique
+                        touches.</p>
+                    <img src="./assets/images/icons/web-design.png" alt="Customize Design"
+                        class="mt-6 rounded-lg img-float" width="300" height="200"
+                        onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/333333?text=Image+Error';">
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center p-4 md:p-6 bg-white rounded-2xl card-shadow">
+                    <div
+                        class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mb-6 border-4 border-secondary">
+                        <span class="text-4xl font-bold text-primary">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Share & Publish</h3>
+                    <p class="text-gray-600 text-center text-md">Download your masterpiece or share it directly to your
+                        audience.</p>
+                    <img src="./assets/images/icons/share.png" alt="Share Design" class="mt-6 rounded-lg img-float"
+                        width="300" height="200"
+                        onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/333333?text=Image+Error';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="bg-accent py-10 px-6 md:px-12 fade-in-section" style="--animation-delay: 0.6s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl md:text-4xl font-bold mb-4 text-gray-800">What Our Users Say</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                Hear from businesses and individuals transforming their marketing.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Testimonial Card 1 -->
+                <div class="bg-white p-4 rounded-2xl card-shadow flex flex-col items-center">
+                    <img src="./assets/images/Testimonial/client-1.png" alt="User Avatar"
+                        class="w-20 h-20 rounded-full mb-6 border-4 border-secondary">
+                    <p class="text-md text-gray-600 italic mb-6">"CodeMagnet has revolutionized how we create marketing
+                        materials. So easy to use, and the results are consistently professional!"</p>
+                    <p class="font-semibold text-primary">- Jane Doe, Marketing Manager</p>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="bg-white p-4 rounded-2xl card-shadow flex flex-col items-center">
+                    <img src="./assets/images/Testimonial/client-2.png" alt="User Avatar"
+                        class="w-20 h-20 rounded-full mb-6 border-4 border-secondary">
+                    <p class="text-md text-gray-600 italic mb-6">"As a small business owner, I don't have time for
+                        complex software. This platform makes design effortless!"</p>
+                    <p class="font-semibold text-primary">- John Smith, Entrepreneur</p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="bg-white p-4 rounded-2xl card-shadow flex flex-col items-center">
+                    <img src="./assets/images/Testimonial/client-3.png" alt="User Avatar"
+                        class="w-20 h-20 rounded-full mb-6 border-4 border-secondary">
+                    <p class="text-md text-gray-600 italic mb-6">"The AI tools are a game-changer! I can whip up amazing
+                        graphics and copy in half the time."</p>
+                    <p class="font-semibold text-primary">- Emily White, Social Media Influencer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-white py-10 px-4 md:px-6 text-center rounded-xl shadow-lg m-6 md:m-12 fade-in-section"
+        style="--animation-delay: 0.8s;">
+        <div class="container mx-auto">
+            <h2 class="text-2xl md:text-4xl font-bold mb-6 text-gray-800">Ready to Elevate Your Designs?</h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                Join thousands of satisfied users and start creating stunning visuals today.
+            </p>
+            <a href="#"
+                class="inline-block px-8 py-4 rounded-full button-gradient text-white font-bold text-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cta-pulse-animation">
+                Get Started for Free
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 rounded-t-3xl">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+            <div>
+                <a href="#" class="inline-block mb-4">
+                    <img src="./assets/images/logo-white.png" alt="logo" class="h-[40px]">
+                </a>
+                <p class="text-md mb-4 text-gray-400">Design made easy. Create, share, and grow.</p>
+                <ul class="list-none">
+                    <li class="flex items-baseline">
+                        <i class="fas fa-map-marker-alt text-primary mr-2.5"></i>
+                        <p class="mb-3 text-md text-gray-400">
+                            221B Baker Street, London, NW1 6XE, United Kingdom</p>
+                    </li>
+                    <li>
+                        <a href="tel:+15551234567"
+                            class="block mb-3 text-md text-gray-400 transition-colors duration-200 hover:text-white"><i
+                                class="fas fa-phone text-primary mr-2.5"></i>+1-555-123-4567
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@codemagent.com"
+                            class="block mb-5 text-md text-gray-400 transition-colors duration-200 hover:text-white"><i
+                                class="fas fa-envelope text-primary mr-2.5"></i>info@codemagent.com
+                        </a>
+                    </li>
+                </ul>
+                <div class="social-links flex space-x-3">
+                    <a href="#" aria-label="Facebook"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                <ul>
+                    <li class="mb-4"><a href="features.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Features</a>
+                    </li>
+                    <li class="mb-4"><a href="pricing.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Pricing</a>
+                    </li>
+                    <li class="mb-4"><a href="templates.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Templates</a>
+                    </li>
+                    <li class="mb-4"><a href="blog.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Blog</a></li>
+                    <li class="mb-4"><a href="signin.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Signin</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
+                <ul>
+                    <li class="mb-4"><a href="about-us.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">About Us</a>
+                    </li>
+                    <li class="mb-4"><a href="privacy-policy.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Privacy
+                            Policy</a>
+                    </li>
+                    <li class="mb-4"><a href="terms-and-conditions.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Terms and
+                            Conditions</a></li>
+                    <li class="mb-4"><a href="faq.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">FAQ</a></li>
+                    <li class="mb-4"><a href="contact.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
+                <p class="text-gray-400 text-md mb-4">Subscribe to our newsletter for exclusive real estate insights and
+                    offers.
+                </p>
+                <form
+                    class="newsletter-form flex flex-col sm:flex-row rounded-xl overflow-hidden bg-white bg-opacity-10 gap-y-3 sm:gap-x-0">
+                    <input type="email" placeholder="Enter your email here" required class="w-full sm:flex-grow p-3 border-none outline-none bg-transparent text-white placeholder:text-white placeholder:text-opacity-50 text-base
+               focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent
+               transition-all duration-300 ease-in-out
+               rounded-xl sm:rounded-none sm:rounded-l-xl">
+                    <button type="submit" class="px-6 py-3 bg-primary text-white font-semibold cursor-pointer transition-colors duration-400 hover:bg-secondary
+               w-full sm:w-auto rounded-xl sm:rounded-none sm:rounded-r-xl">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-10 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
+            &copy; 2025 CodeMagnet. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="./assets/js/SmoothScroll.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

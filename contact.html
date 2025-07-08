@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMagent – Buy & Sell Website Themes and Templates</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 sticky top-0 z-50 rounded-b-xl">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="./assets/images/logo-black.png" alt="logo" class="h-[40px]">
+            </a>
+            <!-- Desktop Navigation -->
+            <div id="desktop-menu" class="hidden lg:flex items-center space-x-6">
+                <a href="index.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Home</a>
+                <a href="features.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Features</a>
+                <a href="pricing.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Pricing</a>
+                <a href="templates.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Templates</a>
+                <a href="blog.html"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Blog</a>
+                <a href="contact.html" class="text-primary font-bold">Contact</a>
+                <a href="signup.html"
+                    class="px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300">Sign
+                    Up Free</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button"
+                class="lg:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-md p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Navigation (hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden flex-col items-center space-y-4 w-full fixed top-16 left-0 right-0 p-6 bg-white shadow-lg z-40 transition-all duration-300 ease-in-out">
+            <a href="index.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Home</a>
+            <a href="features.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Features</a>
+            <a href="pricing.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Pricing</a>
+            <a href="templates.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Templates</a>
+            <a href="blog.html"
+                class="block text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium py-2">Blog</a>
+            <a href="contact.html" class="block py-2 text-primary font-bold">Contact</a>
+            <a href="signup.html"
+                class="block px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300 w-fit">Sign
+                Up Free</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="hero-gradient text-white px-6 md:px-12 py-20 md:py-28 lg:py-36 text-center overflow-hidden rounded-b-3xl">
+        <div class="container mx-auto relative z-10 fade-in-section" style="--animation-delay: 0s;">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
+                We’d love to hear from you.
+            </h1>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section relative py-10 m-6 md:m-12 z-10 fade-in-section"
+        style="--animation-delay: 0.2s;">
+        <div class="container mx-auto relative z-10">
+            <h2 class="text-2xl md:text-4xl font-bold mb-12 text-gray-800 text-center">
+                Have a question? Get in touch!</h2>
+            <div class="max-w-4xl mx-auto bg-bg-white p-8 md:p-12 rounded-3xl shadow-hover">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="md:col-span-1">
+                        <label for="contact-name" class="block text-text-dark text-lg font-medium mb-3">Your
+                            Name</label>
+                        <input type="text" id="contact-name" name="name" required placeholder="Enter your name"
+                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-lg">
+                    </div>
+                    <div class="md:col-span-1">
+                        <label for="contact-email" class="block text-text-dark text-lg font-medium mb-3">Your
+                            Email</label>
+                        <input type="email" id="contact-email" name="email" required placeholder="Enter your email"
+                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-lg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="contact-message" class="block text-text-dark text-lg font-medium mb-3">Your
+                            Message</label>
+                        <textarea id="contact-message" name="message" required rows="7"
+                            placeholder="Write your message here..."
+                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-lg"></textarea>
+                    </div>
+                    <div class="md:col-span-2 flex justify-center">
+                        <button type="submit"
+                            class="btn bg-primary text-white px-10 py-4 rounded-xl font-semibold text-xl shadow-md hover:bg-secondary hover:translate-y-[-3px] hover:shadow-hover transition-all duration-400 ease-out">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section bg-accent relative py-10 px-6 md:px-12 fade-in-section"
+        style="--animation-delay: 0.4s;">
+        <div class="container mx-auto grid grid-cols-1 items-center">
+            <div class="lg:col-span-1 text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4 text-gray-800">Happy Clients of CodeMagent</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Hear from our happy clients who found their dream
+                    properties and experienced exceptional service with CodeMagent.</p>
+            </div>
+        </div>
+        <div class="container mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial Card 1 -->
+                <div
+                    class="testimonial-card bg-bg-white p-4 rounded-2xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 flex flex-col items-center text-center">
+                    <img src="./assets/images/Client/Client-1.png" alt="Client Roman Jacobson"
+                        class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-primary">
+                    <h3 class="text-xl text-gray-800 font-bold mb-1">Roman Jacobson</h3>
+                    <p class="text-text-light text-sm mb-4">First-Time Homebuyer</p>
+                    <div class="flex text-primary mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 text-base italic">"CodeMagent made my first home buying experience seamless
+                        and stress-free. Their agents were incredibly knowledgeable and supportive throughout the entire
+                        process. Highly recommend!"</p>
+                </div>
+                <!-- Testimonial Card 2 -->
+                <div
+                    class="testimonial-card bg-bg-white p-4 rounded-2xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 flex flex-col items-center text-center">
+                    <img src="./assets/images/Client/Client-2.png" alt="Client Henry Caldwell"
+                        class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-primary">
+                    <h3 class="text-xl text-gray-800 font-bold mb-1">Henry Caldwell</h3>
+                    <p class="text-text-light text-sm mb-4">Real Estate Investor</p>
+                    <div class="flex text-primary mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-base italic">"I've worked with many real estate firms, but CodeMagent
+                        stands out. Their market insights are unparalleled, helping me find lucrative investment
+                        opportunities consistently."</p>
+                </div>
+                <!-- Testimonial Card 3 -->
+                <div
+                    class="testimonial-card bg-bg-white p-4 rounded-2xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 flex flex-col items-center text-center md:col-span-2 lg:col-span-1">
+                    <img src="./assets/images/Client/Client-3.png" alt="Client David Smith"
+                        class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-primary">
+                    <h3 class="text-xl text-gray-800 font-bold mb-1">David Smith</h3>
+                    <p class="text-text-light text-sm mb-4">Property Seller</p>
+                    <div class="flex text-primary mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 text-base italic">"Selling my property was made incredibly easy by
+                        CodeMagent. Their marketing strategy was top-notch, and they secured a fantastic deal in record
+                        time. Highly professional!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="real-estate-icons relative py-10 mx-6 lg:mx-12 fade-in-section" style="--animation-delay: 0.6s;">
+        <div class="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div class="icon-item flex flex-col items-center text-center p-4 group">
+                <img src="./assets/images/brand-logo/logo-1.png" alt="Real Estate Icon 1"
+                    class="w-24 h-24 mb-4 opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-400">
+                <span
+                    class="text-text-light text-lg font-medium group-hover:text-primary transition-colors duration-400">Residential</span>
+            </div>
+            <div class="icon-item flex flex-col items-center text-center p-4 group">
+                <img src="./assets/images/brand-logo/logo-2.png" alt="Real Estate Icon 2"
+                    class="w-24 h-24 mb-4 opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-400">
+                <span
+                    class="text-text-light text-lg font-medium group-hover:text-primary transition-colors duration-400">Commercial</span>
+            </div>
+            <div class="icon-item flex flex-col items-center text-center p-4 group">
+                <img src="./assets/images/brand-logo/logo-3.png" alt="Real Estate Icon 3"
+                    class="w-24 h-24 mb-4 opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-400">
+                <span
+                    class="text-text-light text-lg font-medium group-hover:text-primary transition-colors duration-400">Land
+                    & Plots</span>
+            </div>
+            <div class="icon-item flex flex-col items-center text-center p-4 group">
+                <img src="./assets/images/brand-logo/logo-4.png" alt="Real Estate Icon 4"
+                    class="w-24 h-24 mb-4 opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-400">
+                <span
+                    class="text-text-light text-lg font-medium group-hover:text-primary transition-colors duration-400">Rentals</span>
+            </div>
+            <div class="icon-item flex flex-col items-center text-center p-4 group">
+                <img src="./assets/images/brand-logo/logo-5.png" alt="Real Estate Icon 5"
+                    class="w-24 h-24 mb-4 opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-400">
+                <span
+                    class="text-text-light text-lg font-medium group-hover:text-primary transition-colors duration-400">New
+                    Projects</span>
+            </div>
+            <div class="icon-item flex flex-col items-center text-center p-4 group">
+                <img src="./assets/images/brand-logo/logo-6.png" alt="Real Estate Icon 6"
+                    class="w-24 h-24 mb-4 opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-400">
+                <span
+                    class="text-text-light text-lg font-medium group-hover:text-primary transition-colors duration-400">Property
+                    Management</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 rounded-t-3xl">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+            <div>
+                <a href="#" class="inline-block mb-4">
+                    <img src="./assets/images/logo-white.png" alt="logo" class="h-[40px]">
+                </a>
+                <p class="text-md mb-4 text-gray-400">Design made easy. Create, share, and grow.</p>
+                <ul class="list-none">
+                    <li class="flex items-baseline">
+                        <i class="fas fa-map-marker-alt text-primary mr-2.5"></i>
+                        <p class="mb-3 text-md text-gray-400">
+                            221B Baker Street, London, NW1 6XE, United Kingdom</p>
+                    </li>
+                    <li>
+                        <a href="tel:+15551234567"
+                            class="block mb-3 text-md text-gray-400 transition-colors duration-200 hover:text-white"><i
+                                class="fas fa-phone text-primary mr-2.5"></i>+1-555-123-4567
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@codemagent.com"
+                            class="block mb-5 text-md text-gray-400 transition-colors duration-200 hover:text-white"><i
+                                class="fas fa-envelope text-primary mr-2.5"></i>info@codemagent.com
+                        </a>
+                    </li>
+                </ul>
+                <div class="social-links flex space-x-3">
+                    <a href="#" aria-label="Facebook"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"
+                        class="text-white text-opacity-70 text-lg transition-all duration-400 hover:text-white hover:translate-y-[-5px]"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                <ul>
+                    <li class="mb-4"><a href="features.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Features</a>
+                    </li>
+                    <li class="mb-4"><a href="pricing.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Pricing</a>
+                    </li>
+                    <li class="mb-4"><a href="templates.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Templates</a>
+                    </li>
+                    <li class="mb-4"><a href="blog.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Blog</a></li>
+                    <li class="mb-4"><a href="signin.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Signin</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
+                <ul>
+                    <li class="mb-4"><a href="about-us.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">About Us</a>
+                    </li>
+                    <li class="mb-4"><a href="privacy-policy.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Privacy
+                            Policy</a>
+                    </li>
+                    <li class="mb-4"><a href="terms-and-conditions.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Terms and
+                            Conditions</a></li>
+                    <li class="mb-4"><a href="faq.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">FAQ</a></li>
+                    <li class="mb-4"><a href="contact.html"
+                            class="text-md text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
+                <p class="text-gray-400 text-md mb-4">Subscribe to our newsletter for exclusive real estate insights and
+                    offers.
+                </p>
+                <form
+                    class="newsletter-form flex flex-col sm:flex-row rounded-xl overflow-hidden bg-white bg-opacity-10 gap-y-3 sm:gap-x-0">
+                    <input type="email" placeholder="Enter your email here" required class="w-full sm:flex-grow p-3 border-none outline-none bg-transparent text-white placeholder:text-white placeholder:text-opacity-50 text-base
+               focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent
+               transition-all duration-300 ease-in-out
+               rounded-xl sm:rounded-none sm:rounded-l-xl">
+                    <button type="submit" class="px-6 py-3 bg-primary text-white font-semibold cursor-pointer transition-colors duration-400 hover:bg-secondary
+               w-full sm:w-auto rounded-xl sm:rounded-none sm:rounded-r-xl">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-10 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
+            &copy; 2025 CodeMagnet. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="./assets/js/SmoothScroll.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+
+</html>
