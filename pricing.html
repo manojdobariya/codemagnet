@@ -25,21 +25,30 @@
                 <img src="./assets/images/logo-black.png" alt="logo" class="h-[40px]">
             </a>
             <!-- Desktop Navigation -->
-            <div id="desktop-menu" class="hidden lg:flex items-center space-x-6">
-                <a href="index.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Home</a>
-                <a href="features.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Features</a>
-                <a href="pricing.html" class="text-primary font-bold">Pricing</a>
-                <a href="templates.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Templates</a>
-                <a href="blog.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Blog</a>
-                <a href="contact.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Contact</a>
-                <a href="signup.html"
-                    class="px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300">Sign
-                    Up Free</a>
+            <div id="desktop-menu">
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="index.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Home</a>
+                    </li>
+                    <li><a href="features.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Features</a>
+                    </li>
+                    <li><a href="pricing.html"
+                            class="active text-primary transition-all duration-200 font-medium inline-block">Pricing</a>
+                    </li>
+                    <li><a href="templates.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Templates</a>
+                    </li>
+                    <li><a href="blog.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Contact</a>
+                    </li>
+                    <li><a href="signup.html"
+                            class="px-6 rounded-full button-gradient text-white font-semibold transition-all duration-300 py-2 inline-block">Sign
+                            Up Free</a></li>
+                </ul>
             </div>
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button"
@@ -54,20 +63,30 @@
         <!-- Mobile Navigation (hidden by default) -->
         <div id="mobile-menu"
             class="hidden lg:hidden flex-col items-center space-y-4 w-full fixed top-16 left-0 right-0 p-6 bg-white shadow-lg z-40 transition-all duration-300 ease-in-out">
-            <a href="index.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Home</a>
-            <a href="features.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Features</a>
-            <a href="pricing.html" class="block py-2 text-primary font-bold">Pricing</a>
-            <a href="templates.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Templates</a>
-            <a href="blog.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Blog</a>
-            <a href="contact.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Contact</a>
-            <a href="signup.html"
-                class="block px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300 w-fit">Sign
-                Up Free</a>
+            <ul>
+                <li><a href="index.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Home</a>
+                </li>
+                <li><a href="features.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Features</a>
+                </li>
+                <li><a href="pricing.html"
+                        class="active inline-block text-primary transition-all duration-200 font-medium">Pricing</a>
+                </li>
+                <li><a href="templates.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Templates</a>
+                </li>
+                <li><a href="blog.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Blog</a>
+                </li>
+                <li><a href="contact.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Contact</a>
+                </li>
+                <li><a href="signup.html"
+                        class="inline-block px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300 w-fit h-[40px]">Sign
+                        Up Free</a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -180,7 +199,7 @@
     <section class="py-10 px-4 md:p-6 bg-white rounded-xl shadow-lg m-6 md:m-12 fade-in-section"
         style="--animation-delay: 0.4s;">
         <div class="container mx-auto my-4 md:my-12">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions</h2>
 
             <div class="space-y-6 max-w-3xl mx-auto">
                 <div class="faq-item border border-gray-200 rounded-lg p-3 md:p-6">
@@ -216,7 +235,8 @@
                 </div>
                 <div class="faq-item border border-gray-200 rounded-lg p-3 md:p-6">
                     <button class="faq-question">
-                        <span class="inline-block max-w-[86%] text-lg md:text-xl">What payment methods do you accept?</span>
+                        <span class="inline-block max-w-[86%] text-lg md:text-xl">What payment methods do you
+                            accept?</span>
                         <svg class="w-6 h-6 text-dark transform transition-transform duration-200" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">

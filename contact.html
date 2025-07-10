@@ -25,21 +25,30 @@
                 <img src="./assets/images/logo-black.png" alt="logo" class="h-[40px]">
             </a>
             <!-- Desktop Navigation -->
-            <div id="desktop-menu" class="hidden lg:flex items-center space-x-6">
-                <a href="index.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Home</a>
-                <a href="features.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Features</a>
-                <a href="pricing.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Pricing</a>
-                <a href="templates.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Templates</a>
-                <a href="blog.html"
-                    class="text-gray-600 hover:text-primary transition-all duration-200 font-medium">Blog</a>
-                <a href="contact.html" class="text-primary font-bold">Contact</a>
-                <a href="signup.html"
-                    class="px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300">Sign
-                    Up Free</a>
+            <div id="desktop-menu">
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="index.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Home</a>
+                    </li>
+                    <li><a href="features.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Features</a>
+                    </li>
+                    <li><a href="pricing.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Pricing</a>
+                    </li>
+                    <li><a href="templates.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Templates</a>
+                    </li>
+                    <li><a href="blog.html"
+                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="active text-primary transition-all duration-200 font-medium inline-block">Contact</a>
+                    </li>
+                    <li><a href="signup.html"
+                            class="px-6 rounded-full button-gradient text-white font-semibold transition-all duration-300 py-2 inline-block">Sign
+                            Up Free</a></li>
+                </ul>
             </div>
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button"
@@ -54,20 +63,30 @@
         <!-- Mobile Navigation (hidden by default) -->
         <div id="mobile-menu"
             class="hidden lg:hidden flex-col items-center space-y-4 w-full fixed top-16 left-0 right-0 p-6 bg-white shadow-lg z-40 transition-all duration-300 ease-in-out">
-            <a href="index.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Home</a>
-            <a href="features.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Features</a>
-            <a href="pricing.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Pricing</a>
-            <a href="templates.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Templates</a>
-            <a href="blog.html"
-                class="block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium py-2">Blog</a>
-            <a href="contact.html" class="block py-2 text-primary font-bold">Contact</a>
-            <a href="signup.html"
-                class="block px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300 w-fit">Sign
-                Up Free</a>
+            <ul>
+                <li><a href="index.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Home</a>
+                </li>
+                <li><a href="features.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Features</a>
+                </li>
+                <li><a href="pricing.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Pricing</a>
+                </li>
+                <li><a href="templates.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Templates</a>
+                </li>
+                <li><a href="blog.html"
+                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Blog</a>
+                </li>
+                <li><a href="contact.html"
+                        class="active inline-block text-primary transition-all duration-200 font-medium">Contact</a>
+                </li>
+                <li><a href="signup.html"
+                        class="inline-block px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300 w-fit h-[40px] my-3">Sign
+                        Up Free</a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -81,13 +100,79 @@
         </div>
     </section>
 
-    <!-- Contact Form Section -->
+    <!-- Contact Info Cards Section -->
     <section class="contact-form-section relative py-10 m-6 md:m-12 z-10 fade-in-section"
         style="--animation-delay: 0.2s;">
         <div class="container mx-auto relative z-10">
-            <h2 class="text-2xl md:text-4xl font-bold mb-12 text-gray-800 text-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 text-left">
+                <!-- Address Card -->
+                <div
+                    class="info_card flex justify-left items-center gap-5 bg-white p-6 rounded-2xl transition-all duration-400 shadow-subtle hover:shadow-hover">
+                    <div class="flex justify-center">
+                        <div class="icon-circle">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-light mb-3 text-gray-800">Our Location</h3>
+                        <p class="text-gray-600 text-lg font-semibold leading-relaxed">2221B Baker Street, London, UK
+                        </p>
+                    </div>
+                </div>
+                <!-- Email Card -->
+                <div
+                    class="info_card flex justify-left items-center gap-5 bg-white p-6 rounded-2xl transition-all duration-400 shadow-subtle hover:shadow-hover">
+                    <div class="flex justify-center">
+                        <div class="icon-circle">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-light mb-3 text-gray-800">Email Address</h3>
+                        <p class="text-gray-600 text-lg font-semibold leading-relaxed">info@codemagent.com</p>
+                    </div>
+                </div>
+                <!-- Phone Card -->
+                <div
+                    class="info_card flex justify-left items-center gap-5 bg-white p-6 rounded-2xl transition-all duration-400 shadow-subtle hover:shadow-hover">
+                    <div class="flex justify-center">
+                        <div class="icon-circle">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-light mb-3 text-gray-800">Phone Number</h3>
+                        <p class="text-gray-600 text-lg font-semibold leading-relaxed">+1-555-123-4567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section bg-accent relative py-10 px-6 md:px-12 z-10 fade-in-section"
+        style="--animation-delay: 0.2s;">
+        <div class="container mx-auto relative z-10 my-6 md:my-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 text-gray-800 text-center">
                 Have a question? Get in touch!</h2>
-            <div class="max-w-4xl mx-auto bg-bg-white p-4 md:p-12 rounded-3xl shadow-hover">
+            <div class="max-w-4xl mx-auto bg-bg-white px-4 md:px-6 py-6 rounded-3xl shadow-hover">
                 <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="md:col-span-1">
                         <label for="contact-name" class="block text-text-dark text-lg font-medium mb-3">Your
@@ -118,11 +203,10 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section bg-accent relative py-10 px-6 md:px-12 fade-in-section"
-        style="--animation-delay: 0.4s;">
+    <section class="testimonials-section relative py-10 px-6 md:px-12 fade-in-section" style="--animation-delay: 0.4s;">
         <div class="container mx-auto grid grid-cols-1 items-center mt-6 md:mt-12">
             <div class="lg:col-span-1 text-center mb-12">
-                <h2 class="text-2xl md:text-4xl font-bold mb-4 text-gray-800">Happy Clients of CodeMagent</h2>
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Happy Clients of CodeMagent</h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">Hear from our happy clients who found their dream
                     properties and experienced exceptional service with CodeMagent.</p>
             </div>
@@ -284,7 +368,7 @@
 
     <script src="./assets/js/SmoothScroll.js"></script>
     <script src="./assets/js/script.js"></script>
-    
+
 </body>
 
 </html>
