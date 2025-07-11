@@ -13,6 +13,8 @@
         rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -28,25 +30,25 @@
             <div id="desktop-menu">
                 <ul class="hidden lg:flex items-center space-x-6">
                     <li><a href="index.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Home</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Home</a>
                     </li>
                     <li><a href="features.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Features</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Features</a>
                     </li>
                     <li><a href="pricing.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Pricing</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Pricing</a>
                     </li>
                     <li><a href="templates.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Templates</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Templates</a>
                     </li>
                     <li><a href="blog.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Blog</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Blog</a>
                     </li>
                     <li><a href="contact.html"
-                            class="active text-primary transition-all duration-200 font-medium inline-block">Contact</a>
+                            class="active text-base text-primary transition-all font-medium inline-block">Contact</a>
                     </li>
                     <li><a href="signup.html"
-                            class="px-6 rounded-full button-gradient text-white font-semibold transition-all duration-300 py-2 inline-block">Sign
+                            class="px-6 rounded-full button-gradient text-base text-white font-semibold transition-all py-2 inline-block">Sign
                             Up Free</a></li>
                 </ul>
             </div>
@@ -62,28 +64,28 @@
         </nav>
         <!-- Mobile Navigation (hidden by default) -->
         <div id="mobile-menu"
-            class="hidden lg:hidden flex-col items-center space-y-4 w-full fixed top-16 left-0 right-0 p-6 bg-white shadow-lg z-40 transition-all duration-300 ease-in-out">
+            class="hidden lg:hidden flex-col items-center space-y-4 w-full fixed top-16 left-0 right-0 p-6 bg-white shadow-lg z-40">
             <ul>
                 <li><a href="index.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Home</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Home</a>
                 </li>
                 <li><a href="features.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Features</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Features</a>
                 </li>
                 <li><a href="pricing.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Pricing</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Pricing</a>
                 </li>
                 <li><a href="templates.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Templates</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Templates</a>
                 </li>
                 <li><a href="blog.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Blog</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Blog</a>
                 </li>
                 <li><a href="contact.html"
-                        class="active inline-block text-primary transition-all duration-200 font-medium">Contact</a>
+                        class="active inline-block text-base text-primary transition-all font-medium">Contact</a>
                 </li>
                 <li><a href="signup.html"
-                        class="inline-block px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300 w-fit h-[40px] my-3">Sign
+                        class="inline-block px-6 py-2 rounded-full button-gradient text-base text-white font-semibold transition-all w-fit h-[40px] my-3">Sign
                         Up Free</a>
                 </li>
             </ul>
@@ -93,7 +95,7 @@
     <!-- Hero Section -->
     <section
         class="hero-gradient text-white px-6 md:px-12 py-20 md:py-28 lg:py-36 text-center overflow-hidden rounded-b-3xl">
-        <div class="container mx-auto relative z-10 fade-in-section" style="--animation-delay: 0s;">
+        <div class="container mx-auto relative z-10" data-aos="fade-up" data-aos-duration="1000">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
                 We’d love to hear from you.
             </h1>
@@ -101,13 +103,12 @@
     </section>
 
     <!-- Contact Info Cards Section -->
-    <section class="contact-form-section relative py-10 m-6 md:m-12 z-10 fade-in-section"
-        style="--animation-delay: 0.2s;">
+    <section class="contact-form-section relative py-10 m-6 md:m-12 z-10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container mx-auto relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 text-left">
                 <!-- Address Card -->
                 <div
-                    class="info_card flex justify-left items-center gap-5 bg-white p-6 rounded-2xl transition-all duration-400 shadow-subtle hover:shadow-hover">
+                    class="info_card flex justify-left items-center gap-5 bg-white p-6 rounded-2xl transition-all duration-400 shadow-subtle hover:shadow-hover" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="flex justify-center">
                         <div class="icon-circle">
                             <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -128,7 +129,7 @@
                 </div>
                 <!-- Email Card -->
                 <div
-                    class="info_card flex justify-left items-center gap-5 bg-white p-6 rounded-2xl transition-all duration-400 shadow-subtle hover:shadow-hover">
+                    class="info_card flex justify-left items-center gap-5 bg-white p-6 rounded-2xl transition-all duration-400 shadow-subtle hover:shadow-hover" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <div class="flex justify-center">
                         <div class="icon-circle">
                             <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -146,7 +147,7 @@
                 </div>
                 <!-- Phone Card -->
                 <div
-                    class="info_card flex justify-left items-center gap-5 bg-white p-6 rounded-2xl transition-all duration-400 shadow-subtle hover:shadow-hover">
+                    class="info_card flex justify-left items-center gap-5 bg-white p-6 rounded-2xl transition-all duration-400 shadow-subtle hover:shadow-hover" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="flex justify-center">
                         <div class="icon-circle">
                             <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -167,8 +168,7 @@
     </section>
 
     <!-- Contact Form Section -->
-    <section class="contact-form-section bg-accent relative py-10 px-6 md:px-12 z-10 fade-in-section"
-        style="--animation-delay: 0.2s;">
+    <section class="contact-form-section bg-accent relative py-10 px-6 md:px-12 z-10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container mx-auto relative z-10 my-6 md:my-12">
             <h2 class="text-2xl md:text-3xl font-bold mb-12 text-gray-800 text-center">
                 Have a question? Get in touch!</h2>
@@ -203,7 +203,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section relative py-10 px-6 md:px-12 fade-in-section" style="--animation-delay: 0.4s;">
+    <section class="testimonials-section relative py-10 px-6 md:px-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container mx-auto grid grid-cols-1 items-center mt-6 md:mt-12">
             <div class="lg:col-span-1 text-center mb-12">
                 <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Happy Clients of CodeMagent</h2>
@@ -215,7 +215,7 @@
             <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Testimonial Card 1 -->
                 <div
-                    class="testimonial-card bg-bg-white px-4 py-6 rounded-2xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 flex flex-col items-center text-center">
+                    class="testimonial-card bg-bg-white px-4 py-6 rounded-2xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <img src="./assets/images/Client/Client-1.png" alt="Client Roman Jacobson"
                         class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-primary">
                     <h3 class="text-xl text-gray-800 font-bold mb-1">Roman Jacobson</h3>
@@ -230,7 +230,7 @@
                 </div>
                 <!-- Testimonial Card 2 -->
                 <div
-                    class="testimonial-card bg-bg-white px-4 py-6 rounded-2xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 flex flex-col items-center text-center">
+                    class="testimonial-card bg-bg-white px-4 py-6 rounded-2xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <img src="./assets/images/Client/Client-2.png" alt="Client Henry Caldwell"
                         class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-primary">
                     <h3 class="text-xl text-gray-800 font-bold mb-1">Henry Caldwell</h3>
@@ -245,7 +245,7 @@
                 </div>
                 <!-- Testimonial Card 3 -->
                 <div
-                    class="testimonial-card bg-bg-white px-4 py-6 rounded-2xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 flex flex-col items-center text-center md:col-span-2 lg:col-span-1">
+                    class="testimonial-card bg-bg-white px-4 py-6 rounded-2xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 flex flex-col items-center text-center md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <img src="./assets/images/Client/Client-3.png" alt="Client David Smith"
                         class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-primary">
                     <h3 class="text-xl text-gray-800 font-bold mb-1">David Smith</h3>
@@ -263,7 +263,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 rounded-t-3xl">
+    <footer class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 rounded-t-3xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"> 
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
             <div>
                 <a href="#" class="inline-block mb-4">
@@ -367,6 +367,8 @@
     </footer>
 
     <script src="./assets/js/SmoothScroll.js"></script>
+    <!-- Initialize AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/script.js"></script>
 
 </body>

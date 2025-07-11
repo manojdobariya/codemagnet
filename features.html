@@ -13,6 +13,8 @@
         rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -28,25 +30,25 @@
             <div id="desktop-menu">
                 <ul class="hidden lg:flex items-center space-x-6">
                     <li><a href="index.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Home</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Home</a>
                     </li>
                     <li><a href="features.html"
-                            class="active text-primary transition-all duration-200 font-medium inline-block">Features</a>
+                            class="active text-base text-primary transition-all font-medium inline-block">Features</a>
                     </li>
                     <li><a href="pricing.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Pricing</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Pricing</a>
                     </li>
                     <li><a href="templates.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Templates</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Templates</a>
                     </li>
                     <li><a href="blog.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Blog</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Blog</a>
                     </li>
                     <li><a href="contact.html"
-                            class="text-gray-600 hover:text-primary transition-all duration-200 font-medium inline-block">Contact</a>
+                            class="text-base text-gray-600 hover:text-primary transition-all font-medium inline-block">Contact</a>
                     </li>
                     <li><a href="signup.html"
-                            class="px-6 rounded-full button-gradient text-white font-semibold transition-all duration-300 py-2 inline-block">Sign
+                            class="px-6 rounded-full button-gradient text-base text-white font-semibold transition-all py-2 inline-block">Sign
                             Up Free</a></li>
                 </ul>
             </div>
@@ -62,38 +64,38 @@
         </nav>
         <!-- Mobile Navigation (hidden by default) -->
         <div id="mobile-menu"
-            class="hidden lg:hidden flex-col items-center space-y-4 w-full fixed top-16 left-0 right-0 p-6 bg-white shadow-lg z-40 transition-all duration-300 ease-in-out">
+            class="hidden lg:hidden flex-col items-center space-y-4 w-full fixed top-16 left-0 right-0 p-6 bg-white shadow-lg z-40">
             <ul>
                 <li><a href="index.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Home</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Home</a>
                 </li>
                 <li><a href="features.html"
-                        class="active inline-block text-primary transition-all duration-200 font-medium">Features</a>
+                        class="active inline-block text-base text-primary transition-all font-medium">Features</a>
                 </li>
                 <li><a href="pricing.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Pricing</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Pricing</a>
                 </li>
                 <li><a href="templates.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Templates</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Templates</a>
                 </li>
                 <li><a href="blog.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Blog</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Blog</a>
                 </li>
                 <li><a href="contact.html"
-                        class="inline-block text-gray-600 hover:text-indigo-600 transition-all duration-200 font-medium">Contact</a>
+                        class="inline-block text-base text-gray-600 hover:text-indigo-600 transition-all font-medium">Contact</a>
                 </li>
                 <li><a href="signup.html"
-                        class="inline-block px-6 py-2 rounded-full button-gradient text-white font-semibold transition-all duration-300 w-fit h-[40px]">Sign
+                        class="inline-block px-6 py-2 rounded-full button-gradient text-base text-white font-semibold transition-all w-fit h-[40px]">Sign
                         Up Free</a>
                 </li>
             </ul>
         </div>
     </header>
 
-    <!-- Hero Section for Features Page -->
+    <!-- Hero Section -->
     <section
         class="hero-gradient text-white px-6 md:px-12 py-20 md:py-28 lg:py-36 text-center overflow-hidden rounded-b-3xl">
-        <div class="container mx-auto relative z-10 fade-in-section" style="--animation-delay: 0s;">
+        <div class="container mx-auto relative z-10" data-aos="fade-up" data-aos-duration="1000">
             <h1
                 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight drop-shadow-lg">
                 Unlock Limitless Creativity
@@ -115,7 +117,7 @@
     </section>
 
     <!-- Detailed Features Grid Section -->
-    <section class="py-10 rounded-xl m-6 md:m-12 fade-in-section" style="--animation-delay: 0.2s;">
+    <section class="py-10 rounded-xl m-6 md:m-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container mx-auto text-center">
             <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Designed for Every Creator</h2>
             <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -125,7 +127,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 <!-- Feature Card: Intuitive Drag-and-Drop Editor -->
                 <div
-                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="feature-icon-wrapper icon-circle mb-5">
                         <!-- Icon for Editor - Pencil & Ruler -->
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -142,7 +144,7 @@
 
                 <!-- Feature Card: Vast Template Library -->
                 <div
-                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <div class="feature-icon-wrapper icon-circle mb-5">
                         <!-- Icon for Templates - Document Icon -->
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -159,7 +161,7 @@
 
                 <!-- Feature Card: AI-Powered Magic Tools -->
                 <div
-                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="feature-icon-wrapper icon-circle mb-5">
                         <!-- Icon for AI - Lightbulb with Sparkle -->
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -176,7 +178,7 @@
 
                 <!-- Feature Card: Brand Kit Management -->
                 <div
-                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                     <div class="feature-icon-wrapper icon-circle mb-5">
                         <!-- Icon for Brand Kit - Palette -->
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -193,7 +195,7 @@
 
                 <!-- Feature Card: One-Click Resizing -->
                 <div
-                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                     <div class="feature-icon-wrapper icon-circle mb-5">
                         <!-- Icon for Resizing - Arrows expanding -->
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -210,7 +212,7 @@
 
                 <!-- Feature Card: Collaborative Workspace -->
                 <div
-                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
                     <div class="feature-icon-wrapper icon-circle mb-5">
                         <!-- Icon for Collaboration - Users -->
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -227,7 +229,7 @@
 
                 <!-- Feature Card: Advanced Photo Editing -->
                 <div
-                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
                     <div class="feature-icon-wrapper icon-circle mb-5">
                         <!-- Icon for Photo Editing - Image with adjustments -->
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -244,7 +246,7 @@
 
                 <!-- Feature Card: Extensive Stock Content -->
                 <div
-                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center">
+                    class="feature-card px-3 py-6 bg-white rounded-2xl card-shadow flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="900">
                     <div class="feature-icon-wrapper icon-circle mb-5">
                         <!-- Icon for Stock Content - Globe with media -->
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -263,9 +265,9 @@
     </section>
 
     <!-- Visual Showcase Section -->
-    <section class="bg-accent py-10 px-6 md:px-12 fade-in-section" style="--animation-delay: 0.4s;">
+    <section class="bg-accent py-10 px-6 md:px-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-6 md:my-12">
-            <div class="text-left">
+            <div class="text-left" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                 <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">See Your Ideas Come to Life</h2>
                 <p class="text-lg text-gray-600 mb-8">
                     Our platform simplifies the design process, allowing you to focus on your vision.
@@ -302,7 +304,7 @@
                     Get a Live Demo
                 </a>
             </div>
-            <div class="relative flex justify-center items-center mt-4">
+            <div class="relative flex justify-center items-center mt-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
                 <img src="./assets/images/website-design.png" alt="Design Mockup"
                     class="rounded-xl shadow-2xl img-float" width="500" height="350">
                 <!-- Decorative element -->
@@ -313,22 +315,21 @@
     </section>
 
     <!-- Call to Action Section (reused from template with minor adjustment) -->
-    <section class="bg-white py-10 px-4 md:px-6 text-center rounded-xl shadow-lg m-6 md:m-12 fade-in-section"
-        style="--animation-delay: 0.6s;">
+    <section class="bg-white py-10 px-4 md:px-6 text-center rounded-xl shadow-lg m-6 md:m-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container mx-auto">
             <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">Ready to Transform Your Design Workflow?</h2>
             <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
                 Join thousands of creative professionals and elevate your visual content today.
             </p>
             <a href="#"
-                class="inline-block px-8 py-4 rounded-full button-gradient text-white font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cta-pulse-animation">
+                class="inline-block px-8 py-3 rounded-full button-gradient text-white font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cta-pulse-animation">
                 Free Trial
             </a>
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 rounded-t-3xl">
+    <footer class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 rounded-t-3xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"> 
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
             <div>
                 <a href="#" class="inline-block mb-4">
@@ -432,6 +433,8 @@
     </footer>
 
     <script src="./assets/js/SmoothScroll.js"></script>
+    <!-- Initialize AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>
