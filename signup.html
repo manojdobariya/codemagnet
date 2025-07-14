@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="text-gray-900">
+<body>
 
     <!-- Header Section -->
     <header class="bg-white shadow-sm py-4 px-6 md:px-12 sticky top-0 z-50 rounded-b-xl">
@@ -102,57 +102,57 @@
     </section>
 
     <!-- Signup Section -->
-    <section class="signup-form-section relative z-10 m-6 lg:mt-[-130px] mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <section class="signup-form-section relative z-10 m-6 lg:mt-[-130px] lg:mb-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container mx-auto relative z-10">
-            <div class="max-w-4xl mx-auto bg-bg-white px-4 md:px-12 py-6 rounded-3xl shadow-hover">
+            <div class="max-w-4xl mx-auto bg-bg-white px-4 md:px-12 py-6 rounded-3xl card-shadow">
                 <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-10">Sign Up for
                     CodeMagnet</h2>
                 <form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
                     <div class="md:col-span-1">
-                        <label for="full-name" class="block text-text-dark text-lg font-medium mb-2">Full Name</label>
+                        <label for="full-name" class="block text-gray-600 text-sm font-medium mb-2">Full Name</label>
                         <input type="text" id="full-name" name="full_name" placeholder="Enter your full name"
-                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-lg">
+                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
                     </div>
                     <div class="md:col-span-1">
-                        <label for="email" class="block text-text-dark text-lg font-medium mb-2">Email</label>
+                        <label for="email" class="block text-gray-600 text-sm font-medium mb-2">Email</label>
                         <input type="email" id="email" name="email" placeholder="Enter your email"
-                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-lg">
+                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
                     </div>
                     <div class="md:col-span-1">
-                        <label for="username" class="block text-text-dark text-lg font-medium mb-2">Username</label>
+                        <label for="username" class="block text-gray-600 text-sm font-medium mb-2">Username</label>
                         <input type="text" id="username" name="username" placeholder="Enter your username"
-                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-lg">
+                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
                     </div>
                     <div class="md:col-span-1">
-                        <label for="phone" class="block text-text-dark text-lg font-medium mb-2">Phone Number</label>
+                        <label for="phone" class="block text-gray-600 text-sm font-medium mb-2">Phone Number</label>
                         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
-                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-lg">
+                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
                     </div>
                     <div class="md:col-span-1">
-                        <label for="password" class="block text-text-dark text-lg font-medium mb-2">Password</label>
+                        <label for="password" class="block text-gray-600 text-sm font-medium mb-2">Password</label>
                         <input type="password" id="password" name="password" placeholder="Enter your password"
-                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-lg">
+                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
                     </div>
                     <div class="md:col-span-1">
-                        <label for="confirm-password" class="block text-text-dark text-lg font-medium mb-2">Confirm
+                        <label for="confirm-password" class="block text-gray-600 text-sm font-medium mb-2">Confirm
                             Password</label>
                         <input type="password" id="confirm-password" name="confirm_password"
                             placeholder="Enter your confirm password"
-                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-lg">
+                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
                     </div>
                     <div class="md:col-span-2 flex flex-col sm:flex-row justify-between items-center mt-4 gap-y-4">
                         <div>
                             <button type="submit"
-                                class="btn bg-primary text-white px-8 py-4 rounded-xl font-semibold text-xl shadow-md hover:bg-secondary hover:translate-y-[-3px] hover:shadow-hover transition-all duration-400 ease-out">
+                                class="btn bg-primary text-white px-8 py-3 rounded-xl font-semibold text-lg shadow-md hover:bg-secondary hover:translate-y-[-3px] hover:shadow-hover transition-all duration-400 ease-out">
                                 Sign Up
                             </button>
                         </div>
                         <div>
-                            <span class="text-text-light text-lg">Already have an account?</span>
+                            <span class="text-gray-600 text-base">Already have an account?</span>
                             <a href="signin.html"
-                                class="text-text-light text-lg hover:text-primary transition-all duration-400">
+                                class="text-gray-600 text-base hover:text-primary transition-all duration-400">
                                 <span
-                                    class="text-lg text-primary font-semibold hover:text-secondary transition-all duration-400">Sign
+                                    class="text-base text-primary font-semibold hover:text-secondary transition-all duration-400">Sign
                                     In</span>
                             </a>
                         </div>
@@ -161,7 +161,7 @@
 
                 <div class="relative flex items-center justify-center my-10">
                     <div class="flex-grow border-t border-border-light"></div>
-                    <span class="flex-shrink mx-4 text-text-light text-lg">Or Sign Up With</span>
+                    <span class="flex-shrink mx-4 text-gray-600 text-base">Or Sign Up With</span>
                     <div class="flex-grow border-t border-border-light"></div>
                 </div>
 
@@ -181,25 +181,25 @@
     <footer class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 rounded-t-3xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"> 
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
             <div>
-                <a href="#" class="inline-block mb-4">
+                <a href="index.html" class="inline-block mb-4">
                     <img src="./assets/images/logo-white.png" alt="logo" class="h-[40px]">
                 </a>
-                <p class="text-md mb-4 text-gray-400">Design made easy. Create, share, and grow.</p>
+                <p class="text-base mb-4 text-gray-400">Design made easy. Create, share, and grow.</p>
                 <ul class="list-none">
                     <li class="flex items-baseline">
                         <i class="fas fa-map-marker-alt text-primary mr-2.5"></i>
-                        <p class="mb-3 text-md text-gray-400">
+                        <p class="mb-3 text-base text-gray-400">
                             221B Baker Street, London, NW1 6XE, United Kingdom</p>
                     </li>
                     <li>
                         <a href="tel:+15551234567"
-                            class="block mb-3 text-md text-gray-400 transition-all duration-200 hover:text-white"><i
+                            class="block mb-3 text-base text-gray-400 transition-all duration-200 hover:text-white"><i
                                 class="fas fa-phone text-primary mr-2.5"></i>+1-555-123-4567
                         </a>
                     </li>
                     <li>
                         <a href="mailto:info@codemagent.com"
-                            class="block mb-5 text-md text-gray-400 transition-all duration-200 hover:text-white"><i
+                            class="block mb-5 text-base text-gray-400 transition-all duration-200 hover:text-white"><i
                                 class="fas fa-envelope text-primary mr-2.5"></i>info@codemagent.com
                         </a>
                     </li>
@@ -223,18 +223,18 @@
                 <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
                 <ul>
                     <li class="mb-4"><a href="features.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Features</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Features</a>
                     </li>
                     <li class="mb-4"><a href="pricing.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Pricing</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Pricing</a>
                     </li>
                     <li class="mb-4"><a href="templates.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Templates</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Templates</a>
                     </li>
                     <li class="mb-4"><a href="blog.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Blog</a></li>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Blog</a></li>
                     <li class="mb-4"><a href="signin.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Signin</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Signin</a>
                     </li>
                 </ul>
             </div>
@@ -242,25 +242,25 @@
                 <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
                 <ul>
                     <li class="mb-4"><a href="about-us.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">About Us</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">About Us</a>
                     </li>
                     <li class="mb-4"><a href="privacy-policy.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Privacy
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Privacy
                             Policy</a>
                     </li>
                     <li class="mb-4"><a href="terms-and-conditions.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Terms and
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Terms and
                             Conditions</a></li>
                     <li class="mb-4"><a href="faq.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">FAQ</a></li>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">FAQ</a></li>
                     <li class="mb-4"><a href="contact.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Contact</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Contact</a>
                     </li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
-                <p class="text-gray-400 text-md mb-4">Subscribe to our newsletter for exclusive real estate insights and
+                <p class="text-gray-400 text-base mb-4">Subscribe to our newsletter for exclusive real estate insights and
                     offers.
                 </p>
                 <form

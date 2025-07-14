@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="text-gray-900">
+<body>
 
     <!-- Header Section -->
     <header class="bg-white shadow-sm py-4 px-6 md:px-12 sticky top-0 z-50 rounded-b-xl">
@@ -100,7 +100,7 @@
                 The Power of Color Psychology in Branding
             </h1>
             <div
-                class="post-meta text-lg md:text-xl text-white text-opacity-90 mx-auto w-fit gap-6 flex-col sm:flex-row flex justify-center items-start sm:items-center">
+                class="post-meta text-lg md:text-xl text-white text-opacity-90 mx-auto w-fit gap-6 flex-col sm:flex-row flex justify-center items-center">
                 <span><i class="fas fa-user-circle text-secondary mr-2"></i>By Dr. Emily Brand</span>
                 <span><i class="fas fa-calendar-alt text-secondary mr-2"></i>April 01, 2025</span>
                 <span><i class="fas fa-clock text-secondary mr-2"></i>10 min read</span>
@@ -116,12 +116,12 @@
                 <div class="blog-detail-container">
                     <!-- Main Article Content -->
                     <article
-                        class="col-span-full md:col-span-2 lg:col-span-3 bg-bg-white p-4 md:p-6 rounded-xl shadow-subtle">
-                        <div class="article-hero-image mb-10 rounded-xl overflow-hidden shadow-md">
-                            <img src="./assets/images/Trends-Design-1.png" alt="Color Palette for Branding"
+                        class="col-span-full md:col-span-2 lg:col-span-3 bg-bg-white p-4 md:p-6 rounded-2xl card-shadow">
+                        <div class="article-hero-image mb-10 rounded-2xl overflow-hidden shadow-md">
+                            <img src="./assets/images/Trends-Design-1.png" alt="Trends Design"
                                 class="w-full h-auto object-cover">
                         </div>
-                        <div class="article-content text-lg leading-relaxed text-text-dark">
+                        <div class="article-content text-lg leading-relaxed text-gray-600">
                             <p>In the competitive world of branding, every element contributes to a company's identity
                                 and its connection with consumers. Among these, color stands out as a silent yet
                                 incredibly powerful communicator. Color psychology, the study of how colors affect human
@@ -181,8 +181,8 @@
                                     effectively.</li>
                             </ol>
 
-                            <img src="./assets/images/Trends-Design-2.png" alt="Brand Color Palette Design"
-                                class="w-full h-auto object-cover my-8">
+                            <img src="./assets/images/Trends-Design-2.png" alt="Trends Design"
+                                class="w-full h-auto object-cover my-8 rounded-2xl">
 
                             <h3 class="text-xl font-semibold text-gray-800">The Importance of Consistency
                             </h3>
@@ -194,24 +194,24 @@
                                 brand appear unprofessional or unreliable. Tools and style guides can help maintain
                                 strict adherence to your brand's visual standards.</p>
 
-                            <pre>
+                            <pre class="rounded-2xl">
                                 <code>
-                                // Example of a brand's color variables in CSS
-                                :root {
-                                --brand-primary-blue: #2e86de;
-                                --brand-secondary-navy: #0d2c5e;
-                                --brand-accent-teal: #53d2dc;
-                                --brand-neutral-gray: #f4f7fa;
-                                }
+// Example of a brand's color variables in CSS
+:root {
+--brand-primary-blue: #2e86de;
+--brand-secondary-navy: #0d2c5e;
+--brand-accent-teal: #53d2dc;
+--brand-neutral-gray: #f4f7fa;
+}
 
-                                .button-primary {
-                                background-color: var(--brand-primary-blue);
-                                color: white;
-                                }
+.button-primary {
+background-color: var(--brand-primary-blue);
+color: white;
+}
 
-                                .text-highlight {
-                                color: var(--brand-accent-teal);
-                                }
+.text-highlight {
+color: var(--brand-accent-teal);
+}
                                 </code>
                             </pre>
 
@@ -224,7 +224,7 @@
                         <!-- Share Buttons -->
                         <div
                             class="share-buttons mt-12 pt-8 border-t border-border-light flex flex-col md:flex-row flex-wrap items-center justify-center md:justify-start gap-4">
-                            <span class="text-lg font-semibold text-dark md:mr-4">Share This Post:</span>
+                            <span class="text-lg font-semibold text-gray-800 md:mr-4">Share This Post:</span>
                             <div class="flex gap-4">
                                 <a href="#"
                                     class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl hover:bg-secondary transition-all duration-400 shadow-md hover:shadow-lg hover:translate-y-[-5px]"
@@ -243,12 +243,12 @@
 
                         <!-- Author Box -->
                         <div
-                            class="author-box mt-12 p-4 md:p-8 bg-bg-light rounded-xl shadow-subtle flex flex-col md:flex-row items-center gap-6">
+                            class="author-box mt-12 p-4 md:p-8 bg-bg-light rounded-2xl flex flex-col md:flex-row items-center gap-6">
                             <img src="./assets/images/author.jpg" alt="Author Dr. Emily Brand"
                                 class="w-32 h-32 rounded-full object-cover border-4 border-primary shadow-md">
                             <div class="author-info text-center md:text-left">
                                 <h3 class="text-2xl text-primary mb-2">About Dr. Emily Brand</h3>
-                                <p class="text-text-light mb-4">Dr. Emily Brand is a renowned marketing strategist and
+                                <p class="text-gray-600 text-base mb-4">Dr. Emily Brand is a renowned marketing strategist and
                                     brand consultant with a Ph.D. in Consumer Psychology. She specializes in leveraging
                                     behavioral science and design principles to build impactful brands. Emily frequently
                                     advises startups and established companies on their brand identity and market
@@ -272,7 +272,7 @@
                             class="post-navigation mt-12 pt-8 border-t border-border-light flex flex-col md:flex-row justify-between gap-6">
                             <a href="#"
                                 class="flex flex-col items-start p-4 bg-bg-white rounded-xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 group">
-                                <span class="text-text-light text-sm mb-2"><i
+                                <span class="text-grey-600 text-sm mb-2"><i
                                         class="fas fa-arrow-left mr-2 text-primary group-hover:text-secondary transition-all duration-400"></i>
                                     Previous Post</span>
                                 <h4 class="text-lg text-primary group-hover:text-secondary transition-all duration-400">
@@ -280,7 +280,7 @@
                             </a>
                             <a href="#"
                                 class="flex flex-col items-end text-right p-4 bg-bg-white rounded-xl shadow-subtle hover:shadow-hover hover:translate-y-[-5px] transition-all duration-400 group">
-                                <span class="text-text-light text-sm mb-2">Next Post <i
+                                <span class="text-grey-600 text-sm mb-2">Next Post <i
                                         class="fas fa-arrow-right ml-2 text-primary group-hover:text-secondary transition-all duration-400"></i></span>
                                 <h4 class="text-lg text-primary group-hover:text-secondary transition-all duration-400">
                                     Mastering Brand Storytelling</h4>
@@ -303,10 +303,10 @@
                                         <h4 class="text-lg font-semibold text-primary m-0">Mark K.</h4>
                                         <span class="text-sm text-text-light">April 02, 2025</span>
                                     </div>
-                                    <p class="text-text-dark mb-3">Excellent breakdown, Dr. Brand! This article
+                                    <p class="text-gray-600 text-base mb-3">Excellent breakdown, Dr. Brand! This article
                                         perfectly articulates why our brand's blue palette resonates so well with our
                                         audience. Consistency is indeed key!</p>
-                                    <a href="#" class="text-secondary text-sm font-medium hover:text-primary">Reply</a>
+                                    <a href="#" class="text-primary text-sm font-medium hover:text-secondary">Reply</a>
                                 </div>
                             </div>
 
@@ -320,9 +320,9 @@
                                         <h4 class="text-lg font-semibold text-primary m-0">Sarah A.</h4>
                                         <span class="text-sm text-text-light">April 03, 2025</span>
                                     </div>
-                                    <p class="text-text-dark mb-3">I always wondered about the subconscious impact of
+                                    <p class="text-gray-600 text-base mb-3">I always wondered about the subconscious impact of
                                         colors. This is a must-read for anyone in marketing. Thank you!</p>
-                                    <a href="#" class="text-secondary text-sm font-medium hover:text-primary">Reply</a>
+                                    <a href="#" class="text-primary text-sm font-medium hover:text-secondary">Reply</a>
                                     <!-- Nested Reply -->
                                     <div
                                         class="comment-item flex flex-col md:flex-row mt-6 pt-6 border-t border-border-light items-start">
@@ -335,10 +335,10 @@
                                                     (Author)</h4>
                                                 <span class="text-sm text-text-light">April 03, 2025</span>
                                             </div>
-                                            <p class="text-text-dark mb-3">You're very welcome, Sarah! It's a
+                                            <p class="text-gray-600 text-base mb-3">You're very welcome, Sarah! It's a
                                                 fascinating field with immense practical application.</p>
                                             <a href="#"
-                                                class="text-secondary text-sm font-medium hover:text-primary">Reply</a>
+                                                class="text-primary text-sm font-medium hover:text-secondary">Reply</a>
                                         </div>
                                     </div>
                                 </div>
@@ -353,9 +353,9 @@
                                         <h4 class="text-lg font-semibold text-primary m-0">Jessica L.</h4>
                                         <span class="text-sm text-text-light">April 04, 2025</span>
                                     </div>
-                                    <p class="text-text-dark mb-3">I'm building a new brand and this article gives me so
+                                    <p class="text-gray-600 text-base mb-3">I'm building a new brand and this article gives me so
                                         much to think about regarding my color choices. Super helpful!</p>
-                                    <a href="#" class="text-secondary text-sm font-medium hover:text-primary">Reply</a>
+                                    <a href="#" class="text-primary text-sm font-medium hover:text-secondary">Reply</a>
                                 </div>
                             </div>
                         </div>
@@ -368,26 +368,26 @@
                             <form>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                     <div>
-                                        <label for="name" class="block text-text-dark text-sm font-medium mb-2">Name
+                                        <label for="name" class="block text-gray-600 text-sm font-medium mb-2">Name
                                             <span class="text-red-500">*</span></label>
-                                        <input type="text" id="name" name="name" required
-                                            class="w-full p-3 border border-border-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                                        <input type="text" id="name" name="name" required placeholder="Enter your name"
+                                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
                                     </div>
                                     <div>
-                                        <label for="email" class="block text-text-dark text-sm font-medium mb-2">Email
+                                        <label for="email" class="block text-gray-600 text-sm font-medium mb-2">Email
                                             <span class="text-red-500">*</span></label>
-                                        <input type="email" id="email" name="email" required
-                                            class="w-full p-3 border border-border-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                                        <input type="email" id="email" name="email" required placeholder="Enter your email"
+                                            class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
                                     </div>
                                 </div>
                                 <div class="mb-6">
-                                    <label for="comment" class="block text-text-dark text-sm font-medium mb-2">Comment
+                                    <label for="comment" class="block text-gray-600 text-sm font-medium mb-2">Comment
                                         <span class="text-red-500">*</span></label>
-                                    <textarea id="comment" name="comment" rows="6" required
-                                        class="w-full p-3 border border-border-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"></textarea>
+                                    <textarea id="comment" name="comment" rows="6" required placeholder="Enter your comment"
+                                        class="w-full p-4 border border-border-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"></textarea>
                                 </div>
                                 <button type="submit"
-                                    class="btn btn-action bg-primary text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-secondary hover:text-white hover:translate-y-[-3px] hover:shadow-hover transition-all duration-400 ease-out">Post
+                                    class="btn btn-action bg-primary text-lg text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-secondary hover:text-white hover:translate-y-[-3px] hover:shadow-hover transition-all duration-400 ease-out">Post
                                     Comment</button>
                             </form>
                         </div>
@@ -398,12 +398,12 @@
             <!-- Sidebar Area -->
             <!-- <aside class="lg:col-span-1 flex flex-col space-y-8"> -->
             <aside class="sidebar col-span-full xl:col-span-1">
-                <div class="p-4 md:p-6 bg-bg-white rounded-xl shadow-subtle">
+                <div class="p-4 md:p-6 bg-bg-white rounded-2xl card-shadow">
                     <div class="sidebar-block mb-10">
                         <div
                             class="search-block flex border border-border-light rounded-xl overflow-hidden focus-within:border-primary transition-all duration-400">
                             <input type="text" placeholder="Search"
-                                class="flex-grow p-3 border-none outline-none text-text-dark text-base">
+                                class="flex-grow p-4 border-none outline-none text-gray-600 text-base">
                             <button type="submit"
                                 class="bg-primary text-white py-2 px-4 text-lg cursor-pointer transition-all duration-400 hover:bg-secondary">
                                 <i class="fas fa-search"></i>
@@ -417,16 +417,16 @@
                             Categories</h2>
                         <ul>
                             <li class="mb-3"><a href="#"
-                                    class="text-text-light flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Design
+                                    class="text-gray-600 flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Design
                                     Trends
                                     <span
-                                        class="count bg-border-light text-text-light px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">12</span></a>
+                                        class="count bg-border-light text-gray-600 px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">12</span></a>
                             </li>
                             <li class="mb-3"><a href="#"
-                                    class="text-text-light flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Marketing
+                                    class="text-gray-600 flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Marketing
                                     Strategy
                                     <span
-                                        class="count bg-border-light text-text-light px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">8</span></a>
+                                        class="count bg-border-light text-gray-600 px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">8</span></a>
                             </li>
                             <li class="mb-3"><a href="#"
                                     class="text-white flex justify-between items-center p-2 rounded-lg font-semibold active bg-primary">UI/UX
@@ -435,16 +435,16 @@
                                         class="count text-white bg-opacity-30 px-2 py-1 rounded-md text-sm font-semibold bg-white transition-all duration-400">15</span></a>
                             </li>
                             <li class="mb-3"><a href="#"
-                                    class="text-text-light flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Product
+                                    class="text-gray-600 flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Product
                                     Updates
                                     <span
-                                        class="count bg-border-light text-text-light px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">5</span></a>
+                                        class="count bg-border-light text-gray-600 px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">5</span></a>
                             </li>
                             <li class="mb-3"><a href="#"
-                                    class="text-text-light flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Content
+                                    class="text-gray-600 flex justify-between items-center p-2 rounded-lg transition-all duration-400 hover:bg-primary hover:text-white">Content
                                     Creation
                                     <span
-                                        class="count bg-border-light text-text-light px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">7</span></a>
+                                        class="count bg-border-light text-gray-600 px-2 py-1 rounded-md text-sm font-semibold transition-all duration-400">7</span></a>
                             </li>
                         </ul>
                     </div>
@@ -457,16 +457,16 @@
                             <div
                                 class="property-item flex items-center mb-5 pb-5 border-b border-dashed border-border-light last:border-b-0 last:pb-0 last:mb-0">
                                 <img src="./assets/images/post-image/post-1.png" alt="Property 1"
-                                    class="w-32 h-24 object-cover rounded-lg mr-4 shadow-subtle">
+                                    class="w-32 h-24 object-cover rounded-lg mr-4">
                                 <div class="property-info flex flex-col">
-                                    <h3 class="text-md font-semibold text-gray-800 mb-1 leading-tight"><a
+                                    <h3 class="text-base font-semibold text-gray-800 mb-1 leading-tight"><a
                                             class="transition-all duration-200 hover:text-primary"
                                             href="blog-details.html">Future
                                             of AI in Design
                                             Workflow</a></h3>
-                                    <p class="text-sm text-light mb-2">AI is revolutionizing design workflows ahead.</p>
+                                    <p class="text-sm text-gray-600 mb-2">AI is revolutionizing design workflows ahead.</p>
                                     <a href="blog-details.html"
-                                        class="text-sm text-secondary font-medium hover:text-primary transition-all duration-400">Read
+                                        class="text-sm text-primary font-medium hover:text-secondary transition-all duration-400">Read
                                         More
                                         &rarr;</a>
                                 </div>
@@ -474,16 +474,16 @@
                             <div
                                 class="property-item flex items-center mb-5 pb-5 border-b border-dashed border-border-light last:border-b-0 last:pb-0 last:mb-0">
                                 <img src="./assets/images/post-image/post-2.png" alt="Property 2"
-                                    class="w-32 h-24 object-cover rounded-lg mr-4 shadow-subtle">
+                                    class="w-32 h-24 object-cover rounded-lg mr-4">
                                 <div class="property-info flex flex-col">
-                                    <h3 class="text-md font-semibold text-gray-800 mb-1 leading-tight">
+                                    <h3 class="text-base font-semibold text-gray-800 mb-1 leading-tight">
                                         <a class="transition-all duration-200 hover:text-primary"
                                             href="blog-details.html">Building Accessible
                                             Websites</a>
                                     </h3>
-                                    <p class="text-sm text-light mb-2">Creating websites usable for everyone.</p>
+                                    <p class="text-sm text-gray-600 mb-2">Creating websites usable for everyone.</p>
                                     <a href="blog-details.html"
-                                        class="text-sm text-secondary font-medium hover:text-primary transition-all duration-400">Read
+                                        class="text-sm text-primary font-medium hover:text-secondary transition-all duration-400">Read
                                         More
                                         &rarr;</a>
                                 </div>
@@ -491,17 +491,17 @@
                             <div
                                 class="property-item flex items-center mb-5 pb-5 border-b border-dashed border-border-light last:border-b-0 last:pb-0 last:mb-0">
                                 <img src="./assets/images/post-image/post-3.png" alt="Property 3"
-                                    class="w-32 h-24 object-cover rounded-lg mr-4 shadow-subtle">
+                                    class="w-32 h-24 object-cover rounded-lg mr-4">
                                 <div class="property-info flex flex-col">
-                                    <h3 class="text-md font-semibold text-gray-800 mb-1 leading-tight"><a
+                                    <h3 class="text-base font-semibold text-gray-800 mb-1 leading-tight"><a
                                             class="transition-all duration-200 hover:text-primary"
                                             href="blog-details.html">Visual
                                             Storytelling
                                             for Brands</a>
                                     </h3>
-                                    <p class="text-sm text-light mb-2">Bringing brands to life through visuals.</p>
+                                    <p class="text-sm text-gray-600 mb-2">Bringing brands to life through visuals.</p>
                                     <a href="blog-details.html"
-                                        class="text-sm text-secondary font-medium hover:text-primary transition-all duration-400">Read
+                                        class="text-sm text-primary font-medium hover:text-secondary transition-all duration-400">Read
                                         More
                                         &rarr;</a>
                                 </div>
@@ -515,21 +515,21 @@
                             Tags</h2>
                         <div class="tag-cloud flex flex-wrap gap-2">
                             <a href="#"
-                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">UIdesign</a>
+                                class="inline-block bg-border-light text-gray-600 px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">UIdesign</a>
                             <a href="#"
-                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">UXresearch</a>
+                                class="inline-block bg-border-light text-gray-600 px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">UXresearch</a>
                             <a href="#"
-                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">branding</a>
+                                class="inline-block bg-border-light text-gray-600 px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">branding</a>
                             <a href="#"
-                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">AItools</a>
+                                class="inline-block bg-border-light text-gray-600 px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">AItools</a>
                             <a href="#"
-                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Socialmedia</a>
+                                class="inline-block bg-border-light text-gray-600 px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Socialmedia</a>
                             <a href="#"
-                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Webdesign</a>
+                                class="inline-block bg-border-light text-gray-600 px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Webdesign</a>
                             <a href="#"
-                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Typography</a>
+                                class="inline-block bg-border-light text-gray-600 px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Typography</a>
                             <a href="#"
-                                class="inline-block bg-border-light text-text-light px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Seo</a>
+                                class="inline-block bg-border-light text-gray-600 px-4 py-2 rounded-full text-sm transition-all duration-400 hover:bg-primary hover:text-white hover:translate-y-[-3px]">Seo</a>
                         </div>
                     </div>
                 </div>
@@ -556,25 +556,25 @@
     <footer class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 rounded-t-3xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"> 
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
             <div>
-                <a href="#" class="inline-block mb-4">
+                <a href="index.html" class="inline-block mb-4">
                     <img src="./assets/images/logo-white.png" alt="logo" class="h-[40px]">
                 </a>
-                <p class="text-md mb-4 text-gray-400">Design made easy. Create, share, and grow.</p>
+                <p class="text-base mb-4 text-gray-400">Design made easy. Create, share, and grow.</p>
                 <ul class="list-none">
                     <li class="flex items-baseline">
                         <i class="fas fa-map-marker-alt text-primary mr-2.5"></i>
-                        <p class="mb-3 text-md text-gray-400">
+                        <p class="mb-3 text-base text-gray-400">
                             221B Baker Street, London, NW1 6XE, United Kingdom</p>
                     </li>
                     <li>
                         <a href="tel:+15551234567"
-                            class="block mb-3 text-md text-gray-400 transition-all duration-200 hover:text-white"><i
+                            class="block mb-3 text-base text-gray-400 transition-all duration-200 hover:text-white"><i
                                 class="fas fa-phone text-primary mr-2.5"></i>+1-555-123-4567
                         </a>
                     </li>
                     <li>
                         <a href="mailto:info@codemagent.com"
-                            class="block mb-5 text-md text-gray-400 transition-all duration-200 hover:text-white"><i
+                            class="block mb-5 text-base text-gray-400 transition-all duration-200 hover:text-white"><i
                                 class="fas fa-envelope text-primary mr-2.5"></i>info@codemagent.com
                         </a>
                     </li>
@@ -598,18 +598,18 @@
                 <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
                 <ul>
                     <li class="mb-4"><a href="features.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Features</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Features</a>
                     </li>
                     <li class="mb-4"><a href="pricing.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Pricing</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Pricing</a>
                     </li>
                     <li class="mb-4"><a href="templates.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Templates</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Templates</a>
                     </li>
                     <li class="mb-4"><a href="blog.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Blog</a></li>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Blog</a></li>
                     <li class="mb-4"><a href="signin.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Signin</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Signin</a>
                     </li>
                 </ul>
             </div>
@@ -617,25 +617,25 @@
                 <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
                 <ul>
                     <li class="mb-4"><a href="about-us.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">About Us</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">About Us</a>
                     </li>
                     <li class="mb-4"><a href="privacy-policy.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Privacy
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Privacy
                             Policy</a>
                     </li>
                     <li class="mb-4"><a href="terms-and-conditions.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Terms and
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Terms and
                             Conditions</a></li>
                     <li class="mb-4"><a href="faq.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">FAQ</a></li>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">FAQ</a></li>
                     <li class="mb-4"><a href="contact.html"
-                            class="text-md text-gray-400 hover:text-white transition-all duration-200">Contact</a>
+                            class="text-base text-gray-400 hover:text-white transition-all duration-200">Contact</a>
                     </li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
-                <p class="text-gray-400 text-md mb-4">Subscribe to our newsletter for exclusive real estate insights and
+                <p class="text-gray-400 text-base mb-4">Subscribe to our newsletter for exclusive real estate insights and
                     offers.
                 </p>
                 <form
